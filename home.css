@@ -1,0 +1,35 @@
+#home-registration-forms{
+	float:right;
+	width:345px;
+	padding:25px;
+}
+	#home-registration-forms input[type="text"],
+	#home-registration-forms input[type="password"]{
+		width:105px;
+		margin-right:8px;
+		margin-bottom:7px;
+	}
+	#home-registration-forms label{
+		margin-right:20px;
+	}
+	#home-registration-forms div.divider-medium{
+		margin-top:11px;
+		margin-bottom:10px;
+	}
+	#home-registration-forms span{
+		font-size:170%;	
+		font-style:italic;
+		line-height:169%;
+	}
+	#home-registration-forms p{
+		font-size:113%;
+		line-height:125%;
+	}
+
+	#register-form input[type="text"],
+	#register-form input[type="password"]{
+		font-size:120%;
+		width:235px;
+		padding:8px 6px;
+		margin-bottom:15px;
+	}

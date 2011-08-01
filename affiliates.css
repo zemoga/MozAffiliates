@@ -1,0 +1,91 @@
+
+
+
+.highlight-box{
+	zoom:1;
+	padding:15px 20px 10px 20px;
+	border:1px solid #D7D9E8;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	
+	background: #FFFFFF;
+   
+   background-image: url(img/zemoga/vertical-lines.png), -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.25, rgb(244,250,255)),
+    color-stop(0.57, rgb(255,255,255))
+	);
+	background-image: url(img/zemoga/vertical-lines.png), -moz-linear-gradient(
+	    center bottom,
+	    rgb(244,250,255) 25%,
+	    rgb(255,255,255) 57%
+	);
+   filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f4faff', EndColorStr='#FFFFFF', GradientType=0);
+}
+
+input{
+	font-family: Georgia,serif;
+	font-size:110%; /* 14px */
+	font-style:italic;
+	color:#393939;
+	line-height:18px;
+	margin:0;
+	padding:0;
+}
+
+input[type="submit"]{
+	zoom:1;
+	padding:4px 12px;
+	border:1px solid #D7D9E8;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	background: #FFFFFF;	
+	cursor:pointer;
+}
+
+	input[type="submit"]:hover{
+		background-image: url(img/zemoga/vertical-lines.png), -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.25, rgb(244,250,255)),
+	    color-stop(0.57, rgb(255,255,255))
+		);
+		background-image: url(img/zemoga/vertical-lines.png), -moz-linear-gradient(
+		    center bottom,
+		    rgb(244,250,255) 25%,
+		    rgb(255,255,255) 57%
+		);
+	   filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f4faff', EndColorStr='#FFFFFF', GradientType=0);
+	}
+
+
+input[type="text"],
+input[type="password"]{
+	zoom:1;
+	padding:5px 6px;
+	border:1px solid #CDCDCD;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.2) inset;
+	-moz-box-shadow:0 0 3px rgba(0,0,0,0.2) inset;
+	box-shadow:0 0 3px rgba(0,0,0,0.2) inset;
+	background: #FFFFFF;	
+}
+
+div.divider-medium{
+	width:100%;
+	height:20px;
+	background:transparent url(img/zemoga/sprites.png) no-repeat -137px -2px;
+}
