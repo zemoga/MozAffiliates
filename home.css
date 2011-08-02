@@ -1,7 +1,8 @@
 #home-registration-forms{
 	float:right;
-	width:345px;
-	padding:25px;
+	margin: 120px 8px 0;
+	padding: 25px 25px 45px;
+	width: 345px;
 }
 	#home-registration-forms input[type="text"],
 	#home-registration-forms input[type="password"]{
@@ -25,11 +26,88 @@
 		font-size:113%;
 		line-height:125%;
 	}
+	#home-registration-forms .register {
+		background: -moz-linear-gradient(center top, #669BE1 0%, #5784BF 100%) repeat 0 0;
+		border: none;
+		box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
+		color: #fff;
+		display: block;
+	    font-size: 120%;
+	    margin-top: 15px;
+	    padding: 6px 12px;
+	    width: 170px;
+	}
+	#home-registration-forms .register:hover {
+		box-shadow: 0 1px rgba(0, 0, 0, 0.1), 0 -2px rgba(224, 239, 249, 0.9) inset, 0 0 100px rgba(255, 255, 255, 0.1) inset;
+	}
 
 	#register-form input[type="text"],
 	#register-form input[type="password"]{
-		font-size:120%;
-		width:235px;
-		padding:8px 6px;
-		margin-bottom:15px;
+		display: block;
+	    font-size: 120%;
+	    margin-bottom: 15px;
+	    padding: 8px 6px;
+	    width: 235px;
+	}
+	#register-form .agree_chk {
+		float: left;
+	}
+	#register-form label {
+		display: block;
+    	padding-left: 20px;
+	}
+	
+#content.background_illo {
+	background: url(img/zemoga/illo.png) no-repeat 98% 10px;
+	min-height: 390px;
+	padding: 0 200px 0 0;
+	width: 325px;
+}
+	#content h2 {
+		font-size: 40px;
+	}
+	#content p {
+		font-size: 20px;
+		width: 300px;
+	}
+	#content p a {
+		font-style: italic;
+	}
+	#content .divider-medium {
+		margin-bottom: 10px;
+	}
+	#content button {
+		background: #FFF;
+		color: #4F4F4F;	
+		cursor:pointer;
+		font-family: Georgia,serif;
+		font-style: italic;
+		font-size: 14px;
+		padding: 4px 12px;
+		zoom: 1;
+		border: 1px solid #B3C8D7;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		border-radius:4px;
+		-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
+		-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
+		box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
+	}
+	#content button {
+		background: #FFF;
+		color: #4F4F4F;	
+		cursor:pointer;
+		font-family: Georgia,serif;
+		font-size: 16px;
+	    font-style: italic;
+	    margin-bottom: 8px;
+	    padding: 6px 12px;
+		zoom: 1;
+		border: 1px solid #B3C8D7;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		border-radius:4px;
+		-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
+		-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
+		box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
 	}
