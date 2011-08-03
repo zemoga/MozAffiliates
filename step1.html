@@ -21,7 +21,7 @@
 		<script src="js/script.js?v=1111"></script>
 	</head>
 
-	<body id="affiliates" class="">
+	<body id="{section}-{subsection}" class="">
 
 		<script>
 			// <![CDATA[
@@ -44,11 +44,13 @@
 		</script>
 
 		<noscript>
-			<div id="no-js-feature"></div>
+			<div id="no-js-feature">
+			</div>
 		</noscript>
 
 		<div id="wrapper">
 			<div id="doc">
+
 				<div id="nav-access">
 					<a href="#nav-main">skip to navigation</a>
 					<a href="#lang_form">switch language</a>
@@ -216,36 +218,17 @@
 					</div>
 				</div>
 				<!-- end #header -->
-				
-				<div id="home-registration-forms" class="highlight-box">
-					<form action="" method="post" id="login-form">
-						<input type="hidden" name="action" value="login" />
-						<input type="text" id="login-username" name="login-username" value="" placeholder="Username" />
-						<input type="password" id="login-password" name="login-password" value="" placeholder="Password" />
-						<input type="submit" value="Log in »" />
-						<input type="checkbox" id="login-remember-me" name="login-remember-me" value="true" />
-						<label for="login-remember-me">Remember me</label>
-						<a href="#">Forgot it?</a>
-					</form>
-					
-					<div class="divider-medium">&nbsp;</div>
-					<span>Don’t have an account?</span>
-					<p>
-						Want to be a Firefox Affiliate?<br/>
-						Sign up now and start spreading the word.
-					</p>
-					
-					<form action="" method="post" id="register-form">
-						<input type="hidden" name="action" value="register" />
-						<input type="text" id="register-full-name" name="register-full-name" value="" placeholder="Your full name" />
-						<input type="text" id="register-email" name="register-email" value="" placeholder="Your email address" />
-						<input type="password" id="register-password" name="register-password" value="" placeholder="Your password" />
-						<input class="agree_chk" type="checkbox" id="register-agreement" name="register-agreement" value="true" />
-						<label for="register-agreement">I agree to the Firefox Affiliates <a href="#">terms of service</a> and Mozilla <a href="#">Privacy Policy</a></label>
-						<input class="register" type="submit" value="Register »" />
-					</form>
-				</div><!-- end #home-registration-forms -->
-				
+
+				<!-- start breadcrumbs #breadcrumbs -->
+				<p id="breadcrumbs">
+					<a href="/en-US/" class="home">Home</a>
+					<b>»</b>
+					<a href="/en-US/about/">About</a>
+					<b>»</b>
+					<span>Contact Us</span>
+				</p>
+				<!-- end breadcrumbs #breadcrumbs -->
+
 				<div id="main-feature">
 					<h2>
 					Firefox
@@ -254,19 +237,42 @@
 					<p>
 						Everything you need to share Firefox with the world.
 					</p>
-				</div><!-- end #main-feature -->
-				
-				<div id="content" class="background_illo">
-					<h2>Become a Firefox Affiliate Today!</h2>
-					<p>The Firefox Affiliates program is a great way to share your love of Mozilla Firefox. Host Firefox buttons on your site and climb your way to fame on the Affiliates leaderboard. <a title="Learn more" href="#">Learn more &raquo;</a>
-						<div class="tool-tip"><span class="top-arrow"></span><p>Firefox Affiliates is the go-to place for Firefox fans and Mozillians to get promotional buttons and links that encourage users to download Firefox. We do send out prizes and gifts to our affiliates from time to time, but Firefox Affiliates does not offer monetary rewards for hosting Firefox buttons. That warm, fuzzy feeling in your heart will have to do.<br><br>Sign up and become an affiliate today!</p></div>
-					</p>
-					<div class="divider-medium">&nbsp;</div>
-					
-					<button class="share_twitter"> Share on Twitter &raquo;</button>
-					<button class="share_facebook"> Share on Facebook &raquo;</button>
+				</div>
+
+				<div id="content">
+						<div id="home-registration-forms" class="highlight-box">
+							<form action="" method="post" id="login-form">
+								<input type="hidden" name="action" value="login" />
+								<input type="text" id="login-username" name="login-username" value="" placeholder="Username" />
+								<input type="password" id="login-password" name="login-password" value="" placeholder="Password" />
+								<input type="submit" value="Log in »" />
+								<input type="checkbox" id="login-remember-me" name="login-remember-me" value="true" />
+								<label for="login-remember-me">Remember me</label>
+								<a href="#">Forgot it?</a>
+							</form>
+							
+							<div class="divider-medium">&nbsp;</div>
+							<span>Don’t have an account?</span>
+							<p>
+								Want to be a Firefox Affiliate?<br/>
+								Sign up now and start spreading the word.
+							</p>
+							
+							<form action="" method="post" id="register-form">
+								<input type="hidden" name="action" value="register" />
+								<input type="text" id="register-full-name" name="register-full-name" value="" placeholder="Your full name" />
+								<input type="text" id="register-email" name="register-email" value="" placeholder="Your email address" />
+								<input type="password" id="register-password" name="register-password" value="" placeholder="Your password" />
+								<input type="checkbox" id="register-agreement" name="register-agreement" value="true" />
+								<label for="register-agreement">I agree to the Firefox Affiliates <a href="#">terms of service</a> and Mozilla <a href="#">Privacy Policy</a></label>
+								<input type="submit" value="Register »" />
+							</form>
+						</div>
+
 				</div><!-- end #content div -->
-				
+				<div id="sidebar">
+					
+				</div>
 			</div><!-- end #doc -->
 		</div><!-- end #wrapper -->
 

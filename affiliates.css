@@ -93,3 +93,32 @@ div.divider-medium{
 #affiliates #main-feature {
 	padding-top: 60px;
 }
+div.tool-tip
+{
+	
+	background: -moz-linear-gradient(center bottom , rgba(244,249,255,0.9) 30%,rgba(244,249,255,0.9) 70%) repeat scroll 0 0 transparent;
+	box-shadow: 0 4px rgba(0, 0, 0, 0.3), 0 -3px #e4eef9 inset, 0 0 8px #adc1d7 inset;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px #adc1d7;
+	padding: 5px 15px;	
+	position:absolute;
+	z-index: 1;
+	
+}
+#content div.tool-tip p{
+	font-family: Georgia,serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #637b95;
+}
+div.tool-tip span.top-arrow
+{
+	background: url("/img/zemoga/top-arrow.png") no-repeat scroll 0 0 transparent;
+    height: 26px;
+    margin-left: 130px;
+    margin-top: -21px;
+    position: absolute;
+    width: 36px;
+    z-index: 1;
+	
+}
