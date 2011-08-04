@@ -96,8 +96,9 @@ div.divider-medium{
 div.tool-tip
 {
 	
-	background: -moz-linear-gradient(center bottom , rgba(244,249,255,0.9) 30%,rgba(244,249,255,0.9) 70%) repeat scroll 0 0 transparent;
-	box-shadow: 0 4px rgba(0, 0, 0, 0.3), 0 -3px #e4eef9 inset, 0 0 8px #adc1d7 inset;
+	background:-moz-linear-gradient(center bottom , rgba(244,249,255,0.9) 30%,rgba(244,249,255,0.9) 70%) repeat scroll 0 0 transparent;
+	background:-webkit-gradient(linear, left top, left bottom, from(rgba(244,249,255,0.9)), to(rgba(244,249,255,0.9)));
+	box-shadow: 0 4px rgba(0, 0, 0, 0.3), 0 -3px #e4eef9 inset, 0 0 4px #adc1d7 inset;
 	border-radius: 5px 5px 5px 5px;
 	border: solid 1px #adc1d7;
 	padding: 5px 15px;	
@@ -116,9 +117,61 @@ div.tool-tip span.top-arrow
 	background: url("/img/zemoga/top-arrow.png") no-repeat scroll 0 0 transparent;
     height: 26px;
     margin-left: 130px;
-    margin-top: -21px;
+    margin-top: -22px;
     position: absolute;
     width: 36px;
     z-index: 1;
+	
+}
+/*steps for affiliates*/
+#content-nav ul li
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #e6ebf1;
+    border-radius: 4px 4px 4px 4px;    
+    cursor: pointer;
+    padding: 7px 0px;
+    width: 154px;
+    float: left;
+    margin: 0 15px 5px 0;
+    list-style: none;
+    color:#5e5e5e;
+    font-family: 'MuseoSans500';
+    text-align: center;
+}
+#content-nav ul li.active
+{
+	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
+	color:#4577a6;
+}
+#steps-started
+{
+	width: 670px;
+	padding: 0;
+	
+}
+#steps-started h3
+{
+	font-family: 'MuseoSans500';
+	font-size: 30px;
+	font-style:normal;
+	color: #39393a;
+	padding: 20px;
+}
+#steps-started ul.steps-buttons{
+	background: none repeat scroll 0 0 #d3dfe7;
+	border: 1px solid #b4c8d6;	
+	
+}
+#steps-started ul.steps-buttons li{
+	background: none repeat scroll 0 0 #FFFFFF;
+	height: 71px;
+	width: 220px;
+	list-style: none;
+	float: left;
+	
+}
+#steps-started ul.steps-buttons li.active{
+	background: url("/img/zemoga/arrow-active.png") no-repeat scroll 0 0 transparent;
 	
 }

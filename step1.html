@@ -14,6 +14,16 @@
 				src: local('☺'), url('fonts/MetaWebPro-Black.woff') format('woff');
 				font-weight: bold;
 			}
+			@font-face {
+			    font-family: 'MuseoSans500';
+			    src: url('fonts/MuseoSans_500-webfont.eot');
+			    src: url('fonts/MuseoSans_500-webfont.eot?iefix') format('eot'),
+			         url('fonts/MuseoSans_500-webfont.woff') format('woff'),
+			         url('fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+			         url('fonts/MuseoSans_500-webfont.svg#webfontkQkWxTED') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+			}
 		</style>
 		<link href="styles.css?v=1111" rel="stylesheet">
 		<link href="affiliates.css?v=1111" rel="stylesheet">
@@ -240,7 +250,42 @@
 				</div>
 
 				<div id="content">
-						<div id="home-registration-forms" class="highlight-box">
+						<div id="content-nav">
+							<ul>
+								<li class="active">GET STARTED</li>
+								<li>FAQ</li>
+								<li>ABOUT AFILIATES</li>
+								<li>SHARE THIS</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<div id="steps-started" class="highlight-box">
+							<h3>Follow these easy steps to get started:</h3>
+							<ul class="steps-buttons">
+								<li class="active"><span>1</span>PICK A CATEGORY</li>
+								<li><span>2</span>PICK A BANNER</li>
+								<li><span>3</span>CONFIGURE & POST</li>
+							</ul>
+							<div class="clear"></div>
+							<<div>
+								<h3>Category:<span>Firefox</span></h3>
+								<ul>
+									<li>Firefox for desktop</li>
+									<li>Firefox for mobile</li>
+									<li>Firefox Plugins</li>
+								</ul>
+								<h3>Category:<span>Mozilla</span></h3>
+								<ul>
+									<li>Mozilla Recruiting</li>									
+								</ul>
+							</div>
+							<div>
+							</div>
+						</div>
+
+				</div><!-- end #content div -->
+				<div id="sidebar">
+					<div id="home-registration-forms" class="highlight-box">
 							<form action="" method="post" id="login-form">
 								<input type="hidden" name="action" value="login" />
 								<input type="text" id="login-username" name="login-username" value="" placeholder="Username" />
@@ -268,10 +313,6 @@
 								<input type="submit" value="Register »" />
 							</form>
 						</div>
-
-				</div><!-- end #content div -->
-				<div id="sidebar">
-					
 				</div>
 			</div><!-- end #doc -->
 		</div><!-- end #wrapper -->
