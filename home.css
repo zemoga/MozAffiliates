@@ -28,6 +28,7 @@
 	}
 	#home-registration-forms .register {
 		background: -moz-linear-gradient(center top, #669BE1 0%, #5784BF 100%) repeat 0 0;
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5784BF), color-stop(1, #669BE1) );
 		border: none;
 		box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 		color: #fff;
@@ -55,6 +56,7 @@
 	#register-form label {
 		display: block;
     	padding-left: 20px;
+		width: 275px;
 	}
 	
 #content.background_illo {
@@ -66,6 +68,9 @@
 	#content h2 {
 		font-size: 40px;
 	}
+		#content h2 spam {
+			display: block;
+		}
 	#content p {
 		font-size: 20px;
 		width: 310px;
@@ -76,24 +81,7 @@
 	#content .divider-medium {
 		margin-bottom: 10px;
 	}
-	#content button {
-		background: #FFF;
-		color: #4F4F4F;	
-		cursor:pointer;
-		font-family: Georgia,serif;
-		font-style: italic;
-		font-size: 14px;
-		padding: 4px 12px;
-		zoom: 1;
-		border: 1px solid #B3C8D7;
-		-webkit-border-radius:4px;
-		-moz-border-radius:4px;
-		border-radius:4px;
-		-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
-		-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
-		box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
-	}
-	#content button {
+		#content button {
 		background: #FFF;
 		color: #4F4F4F;	
 		cursor:pointer;
@@ -110,4 +98,28 @@
 		-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
 		-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
 		box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
+	}
+	#content .share_twitter {
+		background: #FFF url(img/zemoga/sprites.png) no-repeat 10px -43px;
+		padding-left: 50px;
+    	width: 220px;
+	}
+	#content .share_facebook {
+		background: #FFF url(img/zemoga/sprites.png) no-repeat 10px -86px;
+		padding-left: 50px;
+    	width: 220px;
+	}
+#content.thank_you {
+	
+}
+	#content.thank_you p {
+		color: #444;
+		font-size: 15px;
+		width: auto;
+	}
+	#content.thank_you p span {
+		color: #999;
+		display: block;
+		font-size: 15px;
+		width: auto;
 	}

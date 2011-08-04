@@ -1,7 +1,4 @@
-
-
-
-.highlight-box{
+.highlight-box {
 	zoom:1;
 	padding:15px 20px 10px 20px;
 	border:1px solid #D7D9E8;
@@ -12,23 +9,55 @@
 	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	
-	background: #FFFFFF;
-   
-   background-image: url(img/zemoga/vertical-lines.png), -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.25, rgb(244,250,255)),
-    color-stop(0.57, rgb(255,255,255))
+	background-color: #FFF;
+	
+	background-image: url(img/zemoga/vertical-lines.png), -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgb(244,250,255)),
+		color-stop(0.57, rgb(255,255,255))
 	);
 	background-image: url(img/zemoga/vertical-lines.png), -moz-linear-gradient(
 	    center bottom,
 	    rgb(244,250,255) 25%,
 	    rgb(255,255,255) 57%
 	);
-   filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f4faff', EndColorStr='#FFFFFF', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f4faff', EndColorStr='#FFFFFF', GradientType=0);
 }
-
+	.highlight-box .header {
+		color: #444;
+		background: url(img/zemoga/bg_highlightbox_header.png) repeat-x 0 100%;
+		border-radius: 6px 6px 0 0;
+		height: 98px;
+		margin: -15px -20px 0;
+	    position: relative;
+	}
+		.highlight-box .header h2 {
+			left: 33px;
+			font-family: MetaWebPro-Book, sans-serif;
+			font-style: normal;
+			margin: 0;
+		    position: relative;
+			top: 33px;
+		}
+	.highlight-box .help_bulb {
+		background: url(img/zemoga/sprites.png) no-repeat 0 -129px;
+		height: 18px;
+		left: 100px;
+	    position: absolute;
+	    top: 1px;
+		width: 16px;
+	}
+	.highlight-box .msg_warning {
+		background: url(img/zemoga/sprites.png) no-repeat 0 -173px;
+		color: #af6f13;
+		padding-left: 25px;
+	}
+	
+	
+	
+	
 input{
 	font-family: Georgia,serif;
 	font-size:110%; /* 14px */
