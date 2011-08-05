@@ -23,7 +23,7 @@
 	    rgb(244,250,255) 25%,
 	    rgb(255,255,255) 57%
 	);
-	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f4faff', EndColorStr='#FFFFFF', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#f4faff', GradientType=0);
 }
 	.highlight-box .header {
 		color: #444;

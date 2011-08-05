@@ -27,6 +27,9 @@ var HomePage = {
 		if ($("div.tool-tip").length) {
 			HomePage.toggleToolTip();
 		}
+		if($.browser.msie) {
+			$('input[placeholder], textarea[placeholder]').placeholder();
+		}
 	},
 	toggleToolTip: function(){
 		var toolTip = $("div.tool-tip"),

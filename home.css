@@ -27,15 +27,17 @@
 		line-height:125%;
 	}
 	#home-registration-forms .register {
+		background-color: #669BE1;
 		background: -moz-linear-gradient(center top, #669BE1 0%, #5784BF 100%) repeat 0 0;
 		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5784BF), color-stop(1, #669BE1) );
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#669BE1', endColorstr='#5784BF',GradientType=0 );
 		border: none;
 		box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 		color: #fff;
 		display: block;
 	    font-size: 120%;
 	    margin-top: 15px;
-	    padding: 6px 12px;
+	    padding: 6px 12px 9px;
 	    width: 170px;
 	}
 	#home-registration-forms .register:hover {
@@ -73,6 +75,7 @@
 		}
 	#content p {
 		font-size: 20px;
+		line-height: 1.2em;
 		width: 310px;
 	}
 	#content p a {
@@ -100,14 +103,14 @@
 		box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
 	}
 	#content .share_twitter {
-		background: #FFF url(img/zemoga/sprites.png) no-repeat 10px -43px;
-		padding-left: 50px;
-    	width: 220px;
+		background: #FFF url(img/zemoga/sprites.png) no-repeat 12px -43px;
+		padding-left: 55px;
+    	width: 225px;
 	}
 	#content .share_facebook {
-		background: #FFF url(img/zemoga/sprites.png) no-repeat 10px -86px;
+		background: #FFF url(img/zemoga/sprites.png) no-repeat 12px -86px;
 		padding-left: 50px;
-    	width: 220px;
+    	width: 225px;
 	}
 #content.thank_you {
 	
