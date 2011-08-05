@@ -127,6 +127,7 @@ div.tool-tip
 	
 	background:-moz-linear-gradient(center bottom , rgba(244,249,255,0.9) 30%,rgba(244,249,255,0.9) 70%) repeat scroll 0 0 transparent;
 	background:-webkit-gradient(linear, left top, left bottom, from(rgba(244,249,255,0.9)), to(rgba(244,249,255,0.9)));
+	background:#F4F9FF;
 	box-shadow: 0 4px rgba(0, 0, 0, 0.3), 0 -3px #e4eef9 inset, 0 0 4px #adc1d7 inset;
 	border-radius: 5px 5px 5px 5px;
 	border: solid 1px #adc1d7;
@@ -140,10 +141,11 @@ div.tool-tip
 	font-size: 14px;
 	font-style: italic;
 	color: #637b95;
+	padding-top: 14px;
 }
 div.tool-tip span.top-arrow
 {
-	background: url("/img/zemoga/top-arrow.png") no-repeat scroll 0 0 transparent;
+	background: url("img/zemoga/top-arrow.png") no-repeat scroll 0 0 transparent;
     height: 26px;
     margin-left: 130px;
     margin-top: -22px;
@@ -192,15 +194,19 @@ div.tool-tip span.top-arrow
 	border: 1px solid #b4c8d6;	
 	
 }
-#steps-started ul.steps-buttons li{
-	background: none repeat scroll 0 0 #FFFFFF;
-	height: 71px;
-	width: 220px;
-	list-style: none;
-	float: left;
-	
-}
-#steps-started ul.steps-buttons li.active{
-	background: url("/img/zemoga/arrow-active.png") no-repeat scroll 0 0 transparent;
-	
-}
+	#steps-started ul.steps-buttons li{
+		background: none repeat scroll 0 0 #FFFFFF;
+		height: 71px;
+		width: 220px;
+		list-style: none;
+		float: left;
+		
+	}
+	#steps-started ul.steps-buttons li.active{
+		background:-moz-linear-gradient(center bottom , #5b81c8 30%,#4768a7 70%) repeat scroll 0 0 transparent;
+		background:-webkit-gradient(linear, left top, left bottom, from(#5b81c8), to(#4768a7));
+	}
+		#steps-started ul.steps-buttons li.active span.arrow{
+			background: url("/img/zemoga/arrow-active.png") no-repeat scroll 0 0 #FFFFFF;
+			width: 34px;
+		}
