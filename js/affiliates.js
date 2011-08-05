@@ -1,16 +1,42 @@
-/*tool tip */
-$(function() {
-	if($("div.tool-tip"))
-	{
-		$("div.tool-tip").hide();
-		if($("#show-tool-tip")){
-			$("#show-tool-tip").mouseenter(function() {
-				$("div.tool-tip").fadeIn("slow");
-			}).mouseleave(function() {
-				$("div.tool-tip").fadeOut("slow");
-			});
-		}
+
+/**
+ * Page Initialization
+ */
+$(
+	function(event){
+		void HomePage.init();
 	}
-		
+);
+
+/**
+ * Home Page Class
+ */
+var HomePage = {
+
+	/**
+	 * Home Page Initialization
+	 */
+	init: function(){
+		void HomePage.addEventListeners();
+	},
 	
-});
+	/**
+	 *
+	 */
+	addEventListeners: function(){
+		if ($("div.tool-tip").length) {
+			HomePage.toggleToolTip();
+		}
+	},
+	toggleToolTip: function(){
+		var toolTip = $("div.tool-tip"),
+			showToolTip = $("#show-tool-tip");
+		
+		toolTip.hide();
+		showToolTip.mouseenter(function() {
+			toolTip.fadeIn("slow");
+		}).mouseleave(function() {
+			toolTip.fadeOut("slow");
+		});
+	}
+}
