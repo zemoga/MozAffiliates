@@ -115,14 +115,25 @@
 #content.thank_you {
 	
 }
+	#content.thank_you span {
+		display: block;
+	    font-family: Georgia,serif;
+	    font-size: 40px;
+	    font-style: italic;
+	    font-weight: 400;
+	    text-transform: none;
+	    width: auto;
+	}
 	#content.thank_you p {
 		color: #444;
 		font-size: 15px;
+		line-height: 1.5em;
 		width: auto;
 	}
 	#content.thank_you p span {
 		color: #999;
 		display: block;
 		font-size: 15px;
+		font-style: normal;
 		width: auto;
 	}
