@@ -187,6 +187,7 @@ div.left-arrow span {
 {
 	width: 642px;
 	padding: 0;
+	background-image: url("img/zemoga/vertical-lines.png"), -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%); 
 	
 }
 #steps-started h3
@@ -216,19 +217,22 @@ div.left-arrow span {
 	
 	#steps-started ul.steps-buttons li.first{
 		
-		width: 187px;
+		width: 150px;
+		padding-left: 32px;
 		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
 		
 	}
 	#steps-started ul.steps-buttons li.second{
 		
-		width: 215px;
+		width: 150px;
+		padding-left: 60px;
 		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
 		
 	}
 	#steps-started ul.steps-buttons li.third{
 		
-		width: 240px;
+		width: 190px;
+		padding-left: 60px;
 		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
 		
 	}
@@ -241,7 +245,36 @@ div.left-arrow span {
 	}
 	#steps-started ul.steps-buttons li span{		
 		font-family: 'MuseoSans500';
-		font-size: 26px;
-		padding-left: 32px; 
+		font-size: 26px;		 
 	}
+#step-content{
+	background: url("/img/zemoga/divider-notch-steps.jpg") no-repeat scroll 0 75px transparent;
+}
+
+#step-content h3{
+	margin:  0px;
+	color:#898989;
+	font-size: 20px;
+}	
+#step-content h3 span{
+	color:#000;
+	font-size: 20px;
+	text-transform: none;
+	font-weight: lighter;
+	width: 100px;	
+}
+#step-content ul{
+	margin-left: 30px;
 	
+}
+#step-content ul li{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #e6ebf1;
+    border-radius: 4px 4px 4px 4px;    
+    cursor: pointer;
+	width: 188px;
+	height: 214px;
+	float: left;
+	margin-right:10px;
+	list-style: none; 
+}
