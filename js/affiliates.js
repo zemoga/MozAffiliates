@@ -30,6 +30,7 @@ var HomePage = {
 		if($.browser.msie) {
 			$('input[placeholder], textarea[placeholder]').placeholder();
 		}
+		$(".js_uniform").uniform();
 	},
 	toggleToolTip: function(){
 		var toolTip = $("div.tool-tip"),

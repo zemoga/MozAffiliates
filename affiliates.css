@@ -43,6 +43,7 @@
 		}
 	.highlight-box .help_bulb {
 		background: url(img/zemoga/sprites.png) no-repeat 0 -129px;
+		display: block;
 		height: 18px;
 		left: 100px;
 	    position: absolute;
