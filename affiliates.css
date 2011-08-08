@@ -178,7 +178,7 @@ div.tool-tip span.top-arrow
 }
 #steps-started
 {
-	width: 670px;
+	width: 642px;
 	padding: 0;
 	
 }
@@ -192,22 +192,49 @@ div.tool-tip span.top-arrow
 }
 #steps-started ul.steps-buttons{
 	background: none repeat scroll 0 0 #d3dfe7;
-	border: 1px solid #b4c8d6;	
+	/*border: 1px solid #b4c8d6;*/	
 	
 }
 	#steps-started ul.steps-buttons li{
 		background: none repeat scroll 0 0 #FFFFFF;
-		height: 71px;
-		width: 220px;
+		height: 63px;
+		width: 189px;
 		list-style: none;
 		float: left;
+		color:#474848;
+		padding-top:11px;
+		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
+		
+	}
+	
+	#steps-started ul.steps-buttons li.first{
+		
+		width: 187px;
+		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
+		
+	}
+	#steps-started ul.steps-buttons li.second{
+		
+		width: 215px;
+		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
+		
+	}
+	#steps-started ul.steps-buttons li.third{
+		
+		width: 240px;
+		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
 		
 	}
 	#steps-started ul.steps-buttons li.active{
-		background:-moz-linear-gradient(center bottom , #5b81c8 30%,#4768a7 70%) repeat scroll 0 0 transparent;
-		background:-webkit-gradient(linear, left top, left bottom, from(#5b81c8), to(#4768a7));
+		background-position: 0 -222px;
+		color: #FFFFFF;
 	}
-		#steps-started ul.steps-buttons li.active span.arrow{
-			background: url("/img/zemoga/arrow-active.png") no-repeat scroll 0 0 #FFFFFF;
-			width: 34px;
-		}
+	#steps-started ul.steps-buttons li.next-active{
+		background-position: 0 -74px;
+	}
+	#steps-started ul.steps-buttons li span{		
+		font-family: 'MuseoSans500';
+		font-size: 26px;
+		padding-left: 32px; 
+	}
+	
