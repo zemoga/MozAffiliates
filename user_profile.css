@@ -37,6 +37,8 @@
 		}
 		#user-profile-forms .user_data span {
 			color: #444;
+			font-family: 'MuseoSans500', sans-serif;
+			font-size: 14px;
 		}
 		#user-profile-forms .user_data label {
 			color: #999;
@@ -55,6 +57,11 @@
 	}
 	#user-profile-forms button.disabled {
 		opacity: .4;
+	}
+	#user-profile-forms .tool-tip {
+		left: 135px;
+    	top: -18px;
+	    width: 390px;
 	}
 
 	#profile-form {
@@ -106,7 +113,7 @@
 			padding-top: 10px;
 		}
 			#profile-form .section h4 {
-				font-family: verdana;
+				font-family: 'MuseoSans500', sans-serif;
 			    font-size: 14px;
 			    font-style: normal;
 			    margin: 0 0 10px;
@@ -122,6 +129,7 @@
 			#profile-form .section .fields {
 				float: left;
 				margin-right: 12px;
+				position: relative;
 			}
 				#profile-form .section .fields label {
 					display: block;
@@ -130,6 +138,9 @@
 					#profile-form .section .fields label input {
 						margin-right: 10px;
 					}
+				#profile-form .section .fields .enable_avatar {
+					font-style: italic;
+				}
 			#profile-form .section .buttons {
 				float: left;
 				margin-top: 53px;

@@ -35,7 +35,7 @@
 	}
 		.highlight-box .header h2 {
 			left: 33px;
-			font-family: MetaWebPro-Book, sans-serif;
+			font-family: Verdana, sans-serif;
 			font-style: normal;
 			margin: 0;
 		    position: relative;
@@ -123,29 +123,28 @@ div.divider-medium{
 #affiliates #main-feature {
 	padding-top: 60px;
 }
-div.tool-tip
-{
-	
-	background:-moz-linear-gradient(center bottom , rgba(244,249,255,0.9) 30%,rgba(244,249,255,0.9) 70%) repeat scroll 0 0 transparent;
-	background:-webkit-gradient(linear, left top, left bottom, from(rgba(244,249,255,0.9)), to(rgba(244,249,255,0.9)));
-	background:#F4F9FF;
-	box-shadow: 0 4px rgba(0, 0, 0, 0.3), 0 -3px #e4eef9 inset, 0 0 4px #adc1d7 inset;
+div.tool-tip {
+	background: #F4F9FF;
+	background: -moz-linear-gradient(center bottom , rgba(244,249,255,0.9) 30%,rgba(244,249,255,0.9) 70%) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(244,249,255,0.9)), to(rgba(244,249,255,0.9)));
+	box-shadow: 0 4px rgba(0, 0, 0, 0.1), 0 -3px #e4eef9 inset, 0 0 4px #adc1d7 inset;
 	border-radius: 5px 5px 5px 5px;
 	border: solid 1px #adc1d7;
+	display: none;
 	padding: 5px 15px;	
-	position:absolute;
+	position: absolute;
 	z-index: 1;
 	
 }
-#content div.tool-tip p{
+#content div.tool-tip p {
+	color: #637b95;
 	font-family: Georgia,serif;
 	font-size: 14px;
 	font-style: italic;
-	color: #637b95;
+	line-height: 17px;
 	padding-top: 14px;
 }
-div.tool-tip span.top-arrow
-{
+div.top-arrow span {
 	background: url("img/zemoga/top-arrow.png") no-repeat scroll 0 0 transparent;
     height: 26px;
     margin-left: 130px;
@@ -153,7 +152,15 @@ div.tool-tip span.top-arrow
     position: absolute;
     width: 36px;
     z-index: 1;
-	
+}
+div.left-arrow span {
+	background: url("img/zemoga/left-arrow.png") no-repeat scroll 0 0 transparent;
+    height: 36px;
+    margin-left: -32px;
+    margin-top: 5px;
+    position: absolute;
+    width: 26px;
+    z-index: 1;
 }
 /*steps for affiliates*/
 #content-nav ul li

@@ -24,23 +24,33 @@ var HomePage = {
 	 *
 	 */
 	addEventListeners: function(){
-		if ($("div.tool-tip").length) {
-			HomePage.toggleToolTip();
+		if ($(".show_tooltip").length) {
+			$(".show_tooltip").click(function(e){
+				e.preventDefault();
+			});
+			$(".show_tooltip").hover(
+				function(e){
+					HomePage.toggleToolTip($(this).attr('rel'), e.type);
+				}, 
+				function(e){
+					HomePage.toggleToolTip($(this).attr('rel'), e.type);
+				});
 		}
 		if($.browser.msie) {
 			$('input[placeholder], textarea[placeholder]').placeholder();
 		}
-		$(".js_uniform").uniform();
+		if ($(".js_uniform").length) {
+			$(".js_uniform").uniform();
+		}
 	},
-	toggleToolTip: function(){
-		var toolTip = $("div.tool-tip"),
-			showToolTip = $("#show-tool-tip");
+	toggleToolTip: function(rel, e){
+		var toolTip = $('#'+rel), 
+			timer;
 		
-		toolTip.hide();
-		showToolTip.mouseenter(function() {
-			toolTip.fadeIn("slow");
-		}).mouseleave(function() {
-			toolTip.fadeOut("slow");
-		});
+		if (e == "mouseenter") {
+			toolTip.show();
+		} else {
+			toolTip.hide();
+		}
 	}
 }

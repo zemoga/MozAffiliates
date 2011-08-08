@@ -14,6 +14,16 @@
 				src: local('☺'), url('fonts/MetaWebPro-Black.woff') format('woff');
 				font-weight: bold;
 			}
+			@font-face {
+			    font-family: 'MuseoSans500';
+			    src: url('fonts/MuseoSans_500-webfont.eot');
+			    src: url('fonts/MuseoSans_500-webfont.eot?iefix') format('eot'),
+			         url('fonts/MuseoSans_500-webfont.woff') format('woff'),
+			         url('fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+			         url('fonts/MuseoSans_500-webfont.svg#webfontkQkWxTED') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+			}
 		</style>
 		<link href="styles.css?v=1111" rel="stylesheet">
 		<link href="affiliates.css?v=1111" rel="stylesheet">
@@ -255,12 +265,12 @@
 							<p class="required_label"><span>*</span> Required</p>
 							<div class="section">
 								<div class="fields">
-									<h4>CHANGE YOUR AVATAR</h4>
+									<h4>CHOOSE YOUR AVATAR</h4>
 									<div class="user_avatar">
 										<img src="img/zemoga/user_avatar_default.png" />
 									</div>
 									<div class="file_field">	
-										<label><input type="checkbox" /> Enable Avatars</label>
+										<label class="enable_avatar"><input type="checkbox" /> Enable Avatars</label>
 										<input type="text" id="file-avatar" name="file-avatar" value="" />
 									</div>	
 								</div>
@@ -271,9 +281,10 @@
 							</div><!-- end .section -->
 							<div class="section">
 								<div class="fields">
-									<h4>USERNAME <span class="required_star">*</span> <a href="#" class="help_bulb"></a> </h4>
+									<h4>USERNAME <span class="required_star">*</span> <a href="#" class="help_bulb show_tooltip" rel="tooltip_username"></a> </h4>
 									<input class="focused processing" type="text" id="username" name="username" value="" />
 									<p class="msg_warning">Username not available</p>
+									<div class="tool-tip left-arrow" id="tooltip_username"><span></span><p>Your username is your online identity, so use somenthing you are comfortable with everyone seeing. Take into account that you wont be able to change your username in the future.</p></div>
 								</div>
 								<div class="fields suggestions">
 									<h4>SUGGESTIONS</h4>
@@ -303,10 +314,11 @@
 							</div><!-- end .section -->
 							<div class="section">
 								<div class="fields">
-									<h4>ADDRESS <a href="#" class="help_bulb"></a></h4>
+									<h4>ADDRESS <a href="#" class="help_bulb show_tooltip" rel="tooltip_address"></a></h4>
 									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="Street" />
 									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="City" />
 									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="Zip or Postal Code" />
+									<div class="tool-tip left-arrow" id="tooltip_address"><span></span><p>Why should I provide my mailing address?<br /><br />From time to time, we may send you Mozilla T-shirts or other cool stuff in the mail. If you'd like to get stuff from us, please share your mailing address, but it's not mandatory to be part of the Firefox Affiliates program.</p></div>
 								</div>
 								<div class="fields">
 									<h4>&nbsp;</h4>
@@ -318,8 +330,9 @@
 							</div><!-- end .section -->
 							<div class="section">
 								<div class="fields">
-									<h4>LANGUAGE <a href="#" class="help_bulb"></a></h4>
+									<h4>LANGUAGE <a href="#" class="help_bulb show_tooltip" rel="tooltip_language"></a></h4>
 									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="English" />
+									<div class="tool-tip left-arrow" id="tooltip_language"><span></span><p>Your country and language were automatically detected by your IP location, but you are welcome to change them here.</p></div>
 								</div>
 								<div class="fields">
 									<h4>COUNTRY </h4>

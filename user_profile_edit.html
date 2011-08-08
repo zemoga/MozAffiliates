@@ -14,6 +14,13 @@
 				src: local('☺'), url('fonts/MetaWebPro-Black.woff') format('woff');
 				font-weight: bold;
 			}
+			@font-face {
+			    font-family: 'MuseoSans500';
+			    src: url('fonts/MuseoSans_500-webfont.eot');
+			    src: local('☺'), url('fonts/MuseoSans_500-webfont.woff') format('woff');
+			    font-weight: normal;
+			    font-style: normal;
+			}
 		</style>
 		<link href="styles.css?v=1111" rel="stylesheet">
 		<link href="affiliates.css?v=1111" rel="stylesheet">
@@ -237,7 +244,7 @@
 				<div id="content">
 					<div id="user-profile-forms" class="highlight-box">
 						<div class="header">
-							<h2>Complete your user profile</h2>
+							<h2>Edit your user profile</h2>
 						</div>
 						<form action="" method="post" id="profile-form">
 							<div class="section clear_border">
@@ -247,7 +254,7 @@
 										<img src="img/zemoga/user_avatar_default.png" />
 									</div>
 									<div class="file_field">	
-										<label><input type="checkbox" /> Enable Avatars</label>
+										<label class="enable_avatar"><input type="checkbox" /> Enable Avatars</label>
 										<input type="text" id="file-avatar" name="file-avatar" value="" />
 									</div>	
 								</div>
@@ -279,10 +286,11 @@
 							</div><!-- end .section -->
 							<div class="section">
 								<div class="fields">
-									<h4>ADDRESS <a href="#" class="help_bulb"></a></h4>
+									<h4>ADDRESS <a href="#" class="help_bulb show_tooltip" rel="tooltip_address"></a></h4>
 									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="Street" />
 									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="City" />
 									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="Zip or Postal Code" />
+									<div class="tool-tip left-arrow" id="tooltip_address"><span></span><p>Why should I provide my mailing address?<br /><br />From time to time, we may send you Mozilla T-shirts or other cool stuff in the mail. If you'd like to get stuff from us, please share your mailing address, but it's not mandatory to be part of the Firefox Affiliates program.</p></div>
 								</div>
 								<div class="fields">
 									<h4>&nbsp;</h4>
@@ -294,8 +302,9 @@
 							</div><!-- end .section -->
 							<div class="section">
 								<div class="fields">
-									<h4>LANGUAGE <a href="#" class="help_bulb"></a></h4>
+									<h4>LANGUAGE <a href="#" class="help_bulb show_tooltip" rel="tooltip_language"></a></h4>
 									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="English" />
+									<div class="tool-tip left-arrow" id="tooltip_language"><span></span><p>Your country and language were automatically detected by your IP location, but you are welcome to change them here.</p></div>
 								</div>
 								<div class="fields">
 									<h4>COUNTRY </h4>
