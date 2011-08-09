@@ -209,19 +209,19 @@ div.checker.disabled.active span.checked {
 /* Radio */
 
 div.radio {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 div.radio input {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 div.radio span {
-  height: 18px;
-  width: 18px;
-  background-position: 0px -279px;
+  height: 20px;
+  width: 20px;
+  background-position: -201px -428px;
 }
 
 div.radio:active span, 
@@ -231,18 +231,18 @@ div.radio.active span {
 
 div.radio.focus span, 
 div.radio:hover span {
-  background-position: -36px -279px;
+  background-position: -201px -428px;
 }
 
 div.radio.focus:active span,
 div.radio:active:hover span,
 div.radio.active:hover span,
 div.radio.active.focus span {
-  background-position: -54px -279px;
+  background-position: -201px -428px;
 }
 
 div.radio span.checked {
-  background-position: -72px -279px;
+  background-position: -289px -428px;
 }
 
 div.radio:active span.checked,
@@ -251,26 +251,26 @@ div.radio.active span.checked {
 }
 
 div.radio.focus span.checked, div.radio:hover span.checked {
-  background-position: -108px -279px;
+  background-position: -289px -428px;
 }
 
 div.radio.focus:active span.checked, 
 div.radio:hover:active span.checked,
 div.radio.focus.active span.checked,
 div.radio.active:hover span.checked {
-  background-position: -126px -279px;
+  background-position: -289px -428px;
 }
 
 div.radio.disabled span,
 div.radio.disabled:active span,
 div.radio.disabled.active span {
-  background-position: -144px -279px;
+  background-position: -289px -428px;
 }
 
 div.radio.disabled span.checked,
 div.radio.disabled:active span.checked,
 div.radio.disabled.active span.checked {
-  background-position: -162px -279px;
+  background-position: -289px -428px;
 }
 
 /* Uploader */

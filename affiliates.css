@@ -247,7 +247,7 @@ div.left-arrow span {
 		
 	}
 	#steps-started ul.steps-buttons li.active{
-		background-position: 0 -222px;
+		background-position: 0 100%;
 		color: #FFFFFF;
 	}
 	#steps-started ul.steps-buttons li.next-active{
@@ -292,9 +292,16 @@ div.left-arrow span {
 }
 
 #step-content ul li img{
-	padding: 24px 20px; 
+	padding: 24px 20px 0; 
 }
-
+#step-content ul li div.description{
+	padding: 0 20px;
+	width: 140px;
+}
+#step-content ul li div.description p{
+	margin-left:10px;
+	width: 100px;
+}
 #footer-content{
 	background-image: url("img/zemoga/vertical-lines.png"), -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%);
 	height: 40px;
@@ -330,7 +337,7 @@ div.left-arrow span {
 }
 /*side bar*/
 #sidebar{
-	width: 245px;
+	width: 280px;
 	float: right;
 	
 }
@@ -352,7 +359,12 @@ div.degraded-box
 }
 #head-box{
 	border-bottom: 1px solid #B3C8D7;
+	margin: -15px -20px 0;
+	padding: 10px 20px 0;
 	
+}
+#head-box h3{
+	margin: 0;	
 }
 #sidebar-nav ul
 {
@@ -360,6 +372,7 @@ div.degraded-box
 }
 #sidebar-nav ul li
 {
+	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 	background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #E6EBF1;
     border-radius: 4px 4px 4px 4px;
@@ -373,6 +386,20 @@ div.degraded-box
 	float: right;
 	width: auto;
 }
+#head-box p{
+	font-family: 'MuseoSans500';
+	color:#5e5e5e;
+	
+}
+#latest-news h3 {
+	font-family: Georgia,serif;
+	color:#507ec4;
+	font-size: 18px;
+	font-style: normal;  
+}
+#latest-news p{
+	font-size: 14px;
+}
 div.block-space{
 	margin-top: 20px;
 	
@@ -382,6 +409,7 @@ p.georgia-font{
 	font-family: Georgia,serif;
 	font-size: 15px;
 	color:#5e5e5e;
+	font-style: italic;
 	
 }
 p.georgia-font span{
