@@ -169,6 +169,10 @@ div.left-arrow span {
     z-index: 1;
 }
 /*steps for affiliates*/
+#content{
+	width: 650px;
+	float: left;	
+}
 #content-nav ul li
 {
 	background: none repeat scroll 0 0 #FFFFFF;
@@ -178,7 +182,7 @@ div.left-arrow span {
     padding: 7px 0px;
     width: 154px;
     float: left;
-    margin: 0 15px 5px 0;
+    margin: 0 5px 5px 0;
     list-style: none;
     color:#5e5e5e;
     font-family: 'MuseoSans500';
@@ -254,7 +258,7 @@ div.left-arrow span {
 		font-size: 26px;		 
 	}
 #step-content{
-	background: url("/img/zemoga/divider-notch-steps.jpg") no-repeat scroll 0 75px transparent;
+	background: url("/img/zemoga/divider-notch-steps.jpg") repeat-y scroll 0 75px #FFFFFF;
 }
 
 #step-content h3{
@@ -270,7 +274,7 @@ div.left-arrow span {
 	width: 100px;	
 }
 #step-content ul{
-	margin-left: 30px;
+	margin: 40px 0 0 30px;
 	
 }
 #step-content ul li{
@@ -282,5 +286,70 @@ div.left-arrow span {
 	height: 214px;
 	float: left;
 	margin-right:10px;
-	list-style: none; 
+	list-style: none;
+	font-family: "MetaBlack";
+	font-size: 20px; 
+}
+
+#step-content ul li img{
+	padding: 24px 20px; 
+}
+
+#footer-content{
+	background-image: url("img/zemoga/vertical-lines.png"), -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%);
+	height: 40px;
+	padding: 20px 30px;
+	text-align: right;
+	border-top: 1px solid #B0C1D2;
+}
+
+#footer-content .section .buttons button {
+    font-family: Georgia,serif;
+    font-size: 120%;
+    font-style: italic;
+    margin-right: 8px;
+}
+
+#footer-content button.save_changes {
+    background: -moz-linear-gradient(center top , #669BE1 0%, #5784BF 100%) repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+#footer-content button {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B3C8D7;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
+    color: #444444;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 8px 18px;
+}
+/*side bar*/
+#sidebar{
+	width: 245px;
+	float: right;
+	
+}
+#sidebar-nav ul
+{
+	text-align: right;
+}
+#sidebar-nav ul li
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E6EBF1;
+    border-radius: 4px 4px 4px 4px;
+    color: #5E5E5E;
+    cursor: pointer;
+    font-family: 'MuseoSans500';
+    list-style: none outside none;
+    margin: 0 5px 5px 0;
+    padding: 7px 10px;
+    text-align: center;    
+	float: right;
+	width: auto;
 }

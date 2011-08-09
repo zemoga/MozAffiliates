@@ -28,7 +28,9 @@
 		<link href="styles.css?v=1111" rel="stylesheet">
 		<link href="affiliates.css?v=1111" rel="stylesheet">
 		<link href="home.css?v=1111" rel="stylesheet">
+		<link href="uniform.default.css?v=1111" rel="stylesheet">
 		<script src="js/script.js?v=1111"></script>
+		<script src="js/jquery.uniform.min.js?v=1111"></script>
 	</head>
 
 	<body id="{section}-{subsection}" class="">
@@ -256,8 +258,9 @@
 								<li>FAQ</li>
 								<li>ABOUT AFILIATES</li>
 								<li>SHARE THIS</li>
+								<div class="clear"></div>
 							</ul>
-							<div class="clear"></div>
+							
 						</div>
 						<div id="steps-started" class="highlight-box">
 							<h3>Follow these easy steps to get started:</h3>
@@ -270,53 +273,55 @@
 							<div id="step-content">
 								<h3><span>Category:</span>Firefox</h3>
 								<ul>
-									<li>Firefox for desktop</li>
-									<li>Firefox for mobile</li>
-									<li>Firefox Plugins</li>
+									<li><img src="img/zemoga/fpo-desktop.png"><input type="radio"/>Firefox <span>for</span>desktop</li>
+									<li><img src="img/zemoga/fpo-mobile.png"><input type="radio"/>Firefox <span>for</span>mobile</li>
+									<li><img src="img/zemoga/fpo-plugin.png"><input type="radio"/>Firefox Plugins</li>
 									<div class="clear"></div>
 								</ul>
-								
-							</div>
-							
-							<div>	
 								<h3><span>Category:</span>Mozilla</h3>
 								<ul>
-									<li>Mozilla Recruiting</li>									
+									<li><img src="img/zemoga/fpo-recruiting.png"><input type="radio"/>Mozilla<br>Recruiting</li>
+									<div class="clear"></div>									
 								</ul>
+							</div>
+							<div>
+								<div id="footer-content" class="buttons">
+									<button class="save_changes">Continue to Step 2 »</button>
+								</div>
 							</div>							
 						</div>
 
 				</div><!-- end #content div -->
 				<div id="sidebar">
-					<div id="home-registration-forms" class="highlight-box">
-							<form action="" method="post" id="login-form">
-								<input type="hidden" name="action" value="login" />
-								<input type="text" id="login-username" name="login-username" value="" placeholder="Username" />
-								<input type="password" id="login-password" name="login-password" value="" placeholder="Password" />
-								<input type="submit" value="Log in »" />
-								<input type="checkbox" id="login-remember-me" name="login-remember-me" value="true" />
-								<label for="login-remember-me">Remember me</label>
-								<a href="#">Forgot it?</a>
-							</form>
+					<div id="sidebar-nav">
+							<ul>								
+								<li>LOG OUT</li>
+								<li><img src="img/zemoga/avatar-select.png"></li>
+								<div class="clear"></div>								
+							</ul>
+							
+					</div>
+					<div class="highlight-box">
+							<div><img src="img/zemoga/user-avatar.jpg" /><span>John Doe</span></div>
 							
 							<div class="divider-medium">&nbsp;</div>
-							<span>Don’t have an account?</span>
-							<p>
-								Want to be a Firefox Affiliate?<br/>
-								Sign up now and start spreading the word.
-							</p>
+							<span>Start Spreading the Word!</span>
+							<p>You have <span>0</span> banners posted.</p>
 							
-							<form action="" method="post" id="register-form">
-								<input type="hidden" name="action" value="register" />
-								<input type="text" id="register-full-name" name="register-full-name" value="" placeholder="Your full name" />
-								<input type="text" id="register-email" name="register-email" value="" placeholder="Your email address" />
-								<input type="password" id="register-password" name="register-password" value="" placeholder="Your password" />
-								<input type="checkbox" id="register-agreement" name="register-agreement" value="true" />
-								<label for="register-agreement">I agree to the Firefox Affiliates <a href="#">terms of service</a> and Mozilla <a href="#">Privacy Policy</a></label>
-								<input type="submit" value="Register »" />
-							</form>
+							
 						</div>
-				</div>
+						<div class="highlight-box">
+							<h3>Latest News</h3>
+							<p>JANUARY 25, 2011</p>
+							<div class="divider-medium">&nbsp;</div>
+							<span>The new firefox Affiliates program is live!</span>
+							<div class="divider-medium">&nbsp;</div>
+							<p>Welcome to the new Firefox Affiliates program. Have a look around the site, grab some buttons and get on the leaderboard. Have feedback?<br>Let us know at <a href="mailto:affiliates@mozilla.org">affiliates@mozilla.org.</a></p>
+							
+							
+						</div>
+				</div><!-- sidebar -->
+				<div class="clear"></div>
 			</div><!-- end #doc -->
 		</div><!-- end #wrapper -->
 
