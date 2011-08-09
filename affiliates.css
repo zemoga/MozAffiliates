@@ -334,6 +334,26 @@ div.left-arrow span {
 	float: right;
 	
 }
+div.degraded-box
+{
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgb(244,250,255)),
+		color-stop(0.57, rgb(255,255,255))
+	);
+	background-image: -moz-linear-gradient(
+	    center bottom,
+	    rgb(244,250,255) 25%,
+	    rgb(255,255,255) 57%
+	);
+	
+}
+#head-box{
+	border-bottom: 1px solid #B3C8D7;
+	
+}
 #sidebar-nav ul
 {
 	text-align: right;
@@ -353,3 +373,17 @@ div.left-arrow span {
 	float: right;
 	width: auto;
 }
+div.block-space{
+	margin-top: 20px;
+	
+}
+/* fonts */
+p.georgia-font{
+	font-family: Georgia,serif;
+	font-size: 15px;
+	color:#5e5e5e;
+	
+}
+p.georgia-font span{
+	color:#447bc4;
+} 
