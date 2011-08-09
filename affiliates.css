@@ -101,6 +101,7 @@ input[type="submit"]{
 
 
 input[type="text"],
+input[type="email"],
 input[type="password"]{
 	color: #999;
 	zoom:1;
@@ -113,6 +114,11 @@ input[type="password"]{
 	-moz-box-shadow:0 0 3px rgba(0,0,0,0.2) inset;
 	box-shadow:0 0 3px rgba(0,0,0,0.2) inset;
 	background: #FFFFFF;	
+}
+input:invalid {
+	/*-webkit-box-shadow:0 0 3px rgba(255,0,0,0.2) inset !important;
+	-moz-box-shadow:0 0 3px rgba(255,0,0,0.2) inset !important;
+	box-shadow:0 0 3px rgba(255,0,0,0.2) inset !important;*/
 }
 
 div.divider-medium{

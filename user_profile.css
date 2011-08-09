@@ -89,6 +89,7 @@
 			font-weight: 400;
 		}
 		#profile-form input[type="text"], 
+		#profile-form input[type="email"],
 		#profile-form input[type="password"] {
 			display: block;
 			font-size: 15px;
@@ -96,12 +97,10 @@
 			padding: 9px 6px;
 			width: 270px;
 		}
-		#profile-form input.focused {
-			border-color: #6daee1;
-			box-shadow: 0 0 3px #6daee1, 0 2px 3px rgba(0, 0, 0, 0.1) inset;
-		}
 		#profile-form input.processing {
 			background: url(img/zemoga/icn_loading_animated.gif) no-repeat 97% 8px;
+			border-color: #6daee1;
+			box-shadow: 0 0 3px #6daee1, 0 2px 3px rgba(0, 0, 0, 0.1) inset;
 		}
 		#profile-form .section {
 			border-top: 1px solid #EDEDED;

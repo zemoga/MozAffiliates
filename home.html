@@ -223,12 +223,12 @@
 				<div id="home-registration-forms" class="highlight-box">
 					<form action="" method="post" id="login-form">
 						<input type="hidden" name="action" value="login" />
-						<input type="text" id="login-username" name="login-username" value="" placeholder="Username" />
-						<input type="password" id="login-password" name="login-password" value="" placeholder="Password" />
+						<input type="text" id="login-username" name="login-username" value="" placeholder="Username" required />
+						<input type="password" id="login-password" name="login-password" value="" placeholder="Password" required />
 						<input type="submit" value="Log in »" />
 						<input type="checkbox" id="login-remember-me" name="login-remember-me" value="true" />
 						<label for="login-remember-me">Remember me</label>
-						<a href="#">Forgot it?</a>
+						<a href="#" title="Forgot it?">Forgot it?</a>
 					</form>
 					
 					<div class="divider-medium">&nbsp;</div>
@@ -240,11 +240,11 @@
 					
 					<form action="" method="post" id="register-form">
 						<input type="hidden" name="action" value="register" />
-						<input type="text" id="register-full-name" name="register-full-name" value="" placeholder="Your full name" />
-						<input type="text" id="register-email" name="register-email" value="" placeholder="Your email address" />
-						<input type="password" id="register-password" name="register-password" value="" placeholder="Your password" />
-						<input class="agree_chk" type="checkbox" id="register-agreement" name="register-agreement" value="true" />
-						<label for="register-agreement">I agree to the Firefox Affiliates <a href="#">terms of service</a> and Mozilla <a href="#">Privacy Policy</a></label>
+						<input type="text" id="register-full-name" name="register-full-name" value="" placeholder="Your full name" maxlength="30" required />
+						<input type="email" id="register-email" name="register-email" value="" placeholder="Your email address" maxlength="75" required />
+						<input type="password" id="register-password" name="register-password" value="" placeholder="Your password" required />
+						<input class="agree_chk" type="checkbox" id="register-agreement" name="register-agreement" value="true" required />
+						<label for="register-agreement">I agree to the Firefox Affiliates <a href="/tos" title="terms of service">terms of service</a> and Mozilla <a href="http://www.mozilla.com/en-US/privacy-policy.html" title="Privacy Policy">Privacy Policy</a></label>
 						<input class="register" type="submit" value="Register »" />
 					</form>
 				</div><!-- end #home-registration-forms -->

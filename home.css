@@ -5,6 +5,7 @@
 	width: 345px;
 }
 	#home-registration-forms input[type="text"],
+	#home-registration-forms input[type="email"],
 	#home-registration-forms input[type="password"]{
 		margin-bottom: 10px;
 		margin-right: 8px;
@@ -46,6 +47,7 @@
 	}
 
 	#register-form input[type="text"],
+	#register-form input[type="email"],
 	#register-form input[type="password"]{
 		display: block;
 	    font-size: 120%;
