@@ -265,7 +265,8 @@ div.left-arrow span {
 #step-content h3{
 	margin:  0px;
 	color:#898989;
-	font-size: 20px;
+	font-size: 20px; 
+	padding:  20px 20px 0;
 }	
 #step-content h3 span{
 	color:#000;
@@ -275,7 +276,7 @@ div.left-arrow span {
 	width: 100px;	
 }
 #step-content ul{
-	margin: 40px 0 0 30px;
+	margin: 40px 0 30px 30px;
 	
 }
 #step-content ul li{
@@ -300,8 +301,13 @@ div.left-arrow span {
 	width: 140px;
 }
 #step-content ul li div.description p{
-	margin-left:10px;
+	margin-right:10px;
 	width: 100px;
+	float: right;
+	
+}
+#step-content ul li div.description p span{
+	font-style: italic;
 }
 #footer-content{
 	background-image: url("img/zemoga/vertical-lines.png"), -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%);
