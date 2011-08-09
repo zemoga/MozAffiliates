@@ -2,6 +2,7 @@
 	float:right;
 	margin: 120px 8px 0;
 	padding: 25px 25px 45px;
+	position: relative;
 	width: 345px;
 }
 	#home-registration-forms input[type="text"],

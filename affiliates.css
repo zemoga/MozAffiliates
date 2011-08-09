@@ -67,6 +67,7 @@ input{
 	line-height:18px;
 	margin:0;
 	padding:0;
+	position: relative;
 }
 
 input[type="submit"]{
@@ -417,7 +418,8 @@ p.georgia-font span{
 }
 
 ::-webkit-validation-bubble {
-	margin: 5px 0 0 -222px;
+	left: 0 !important;
+	top: 35px !important;
 }
 ::-webkit-validation-bubble-message {
 	background: #333;
@@ -428,6 +430,7 @@ p.georgia-font span{
 	-webkit-box-shadow: 4px 4px 4px rgba(100,100,100,0.6),
 		inset -2px -2px 1px #333,
 		inset 2px 2px 1px #333;
+	white-space: nowrap;
 }
 ::-webkit-validation-bubble-arrow {
 	background: #333;
