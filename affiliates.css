@@ -386,4 +386,25 @@ p.georgia-font{
 }
 p.georgia-font span{
 	color:#447bc4;
-} 
+}
+
+::-webkit-validation-bubble {
+	margin: 5px 0 0 -222px;
+}
+::-webkit-validation-bubble-message {
+	background: #333;
+	border: solid 2px #333;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 400;
+	-webkit-box-shadow: 4px 4px 4px rgba(100,100,100,0.6),
+		inset -2px -2px 1px #333,
+		inset 2px 2px 1px #333;
+}
+::-webkit-validation-bubble-arrow {
+	background: #333;
+	border-color: #333;
+	box-shadow: inset 2px 2px 1px #333;
+}
+::-webkit-validation-bubble-arrow-clipper {
+}
