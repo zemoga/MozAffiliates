@@ -182,8 +182,10 @@
 					width: 120px;
 				}
 		#profile-form button.save_changes {
+			background-color: #669BE1;
 			background: -moz-linear-gradient(center top, #669BE1 0%, #5784BF 100%) repeat 0 0;
 			background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5784BF), color-stop(1, #669BE1) );
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#669BE1', endColorstr='#5784BF',GradientType=0 );
 			border: none;
 			box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 			color: #fff;
