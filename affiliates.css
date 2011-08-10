@@ -1,6 +1,7 @@
 .highlight-box {
 	zoom:1;
 	padding:15px 20px 10px 20px;
+	position: relative;
 	border:1px solid #D7D9E8;
 	-webkit-border-radius:6px;
 	-moz-border-radius:6px;
@@ -36,6 +37,7 @@
 		.highlight-box .header h2 {
 			left: 33px;
 			font-family: Verdana, sans-serif;
+			font-size: 28px !important;
 			font-style: normal;
 			margin: 0;
 		    position: relative;
@@ -55,7 +57,32 @@
 		color: #af6f13;
 		padding-left: 25px;
 	}
-	
+.arrow_indicator {
+	background: url(img/zemoga/bottom-arrow.png) no-repeat 0 0;
+	display: none;
+	height: 13px;
+	left: 0;
+	position: absolute;
+	top: -3px;
+    width: 20px;
+    z-index: 1;
+}
+.first_section .arrow_indicator {
+	display: block;
+	left: 70px;
+}
+.second_section .arrow_indicator {
+	display: block;
+	left: 230px;
+}
+.third_section .arrow_indicator {
+	display: block;
+	left: 390px;
+}
+.fourth_section .arrow_indicator {
+	display: block;
+	left: 550px;
+}
 	
 	
 	
@@ -174,8 +201,7 @@ div.left-arrow span {
 	width: 650px;
 	float: left;	
 }
-#content-nav ul li
-{
+#content-nav ul li {
 	background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #e6ebf1;
     border-radius: 4px 4px 4px 4px;    
@@ -189,13 +215,11 @@ div.left-arrow span {
     font-family: 'MuseoSans500';
     text-align: center;
 }
-#content-nav ul li.active
-{
+#content-nav ul li.active {
 	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 	color:#4577a6;
 }
-#steps-started
-{
+#steps-started {
 	width: 642px;
 	padding: 0;
 	background-image: url(img/zemoga/vertical-lines.png), -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%);
@@ -217,8 +241,7 @@ div.left-arrow span {
 	
 	
 }
-#steps-started h3
-{
+#steps-started h3 {
 	font-family: 'MuseoSans500';
 	font-size: 30px;
 	font-style:normal;
@@ -258,7 +281,6 @@ div.left-arrow span {
 	}
 	
 	#steps-started ul.steps-buttons li.third{
-		
 		width: 190px;
 		padding-left: 60px;
 		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 0 0 #FFFFFF;
@@ -281,8 +303,7 @@ div.left-arrow span {
 #step-content{
 	background:#FFF;	
 }
-#step-content div.divider-notch
-{
+#step-content div.divider-notch {
 	background: url(img/zemoga/divider-notch-steps.jpg) no-repeat scroll 0 0 #FFFFFF;
 	padding-top: 50px;	
 }
@@ -301,26 +322,22 @@ div.left-arrow span {
 	width: 100px;	
 }
 
-#step-content p.head
-{
+#step-content p.head{
 	width:580px;
 	padding: 44px 33px 0;
 	font-size: 22px;
 	color:#39393a;
 }
-#step-content p.head span
-{
+#step-content p.head span{
 	color:#ae2900;
 }
-#step-content p.title
-{
+#step-content p.title{
 	width:580px;
 	padding: 44px 33px 0;
 	font-size: 22px;
 	color:#898989;
 }
-#step-content p.title span
-{
+#step-content p.title span{
 	color:#39393a;
 }
 #step-content ul{
@@ -431,8 +448,7 @@ div.left-arrow span {
 	float: right;
 	
 }
-div.degraded-box
-{
+div.degraded-box{
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
@@ -459,12 +475,10 @@ div.degraded-box
 #head-box h3{
 	margin: 0;	
 }
-#sidebar-nav ul
-{
+#sidebar-nav ul{
 	text-align: right;
 }
-#sidebar-nav ul li
-{
+#sidebar-nav ul li{
 	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 	background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #E6EBF1;
