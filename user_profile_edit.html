@@ -259,8 +259,8 @@
 									</div>	
 								</div>
 								<div class="buttons">
-									<button class="">Browse &raquo;</button>
-									<button class="disabled">Upload &raquo;</button>
+									<button class="js_no_action">Browse &raquo;</button>
+									<button class="disabled js_no_action">Upload &raquo;</button>
 								</div>
 							</div><!-- end .section -->
 							<div class="section">
@@ -276,25 +276,25 @@
 							<div class="section">
 								<div class="fields">
 									<h4>NEW PASSWORD</h4>
-									<input type="password" id="password" name="password" value="" />
+									<input type="password" id="password" name="password" value="" maxlength="20" />
 								</div>
 								<div class="fields">
 									<h4>RETYPE PASSWORD</h4>
-									<input type="password" id="password-confirmation" name="password-confirmation" value="" />
+									<input type="password" id="password-confirmation" name="password-confirmation" value="" maxlength="20" />
 								</div>
 								<p class="grey_label">Between 6-20 characters, include Latin letters and numbers. Note: no-one else can see your password.</p>
 							</div><!-- end .section -->
 							<div class="section">
 								<div class="fields">
 									<h4>ADDRESS <a href="#" class="help_bulb show_tooltip" rel="tooltip_address"></a></h4>
-									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="Street" />
-									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="City" />
-									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="Zip or Postal Code" />
+									<input type="text" id="street" name="street" value="" placeholder="Street" />
+									<input type="text" id="city" name="city" value="" placeholder="City" />
+									<input type="text" id="zip-code" name="zip-code" value="" pattern="\d{1,5}" placeholder="Zip or Postal Code" />
 									<div class="tool-tip left-arrow" id="tooltip_address"><span></span><p>Why should I provide my mailing address?<br /><br />From time to time, we may send you Mozilla T-shirts or other cool stuff in the mail. If you'd like to get stuff from us, please share your mailing address, but it's not mandatory to be part of the Firefox Affiliates program.</p></div>
 								</div>
 								<div class="fields">
 									<h4>&nbsp;</h4>
-									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="Apartment or Unit # (optional)" />
+									<input type="text" id="apartment" name="apartment" value="" placeholder="Apartment or Unit # (optional)" />
 									<select class="js_uniform">
 										<option value="" selected="selected">State or Province</option>
 									</select>
@@ -303,7 +303,7 @@
 							<div class="section">
 								<div class="fields">
 									<h4>LANGUAGE <a href="#" class="help_bulb show_tooltip" rel="tooltip_language"></a></h4>
-									<input type="text" id="file-avatar" name="file-avatar" value="" placeholder="English" />
+									<input type="text" id="language" name="language" value="" placeholder="English" />
 									<div class="tool-tip left-arrow" id="tooltip_language"><span></span><p>Your country and language were automatically detected by your IP location, but you are welcome to change them here.</p></div>
 								</div>
 								<div class="fields">

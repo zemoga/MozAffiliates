@@ -24,6 +24,11 @@ var HomePage = {
 	 *
 	 */
 	addEventListeners: function(){
+		if ($(".js_no_action").length) {
+			$(".js_no_action").click(function(e){
+				e.preventDefault();
+			})
+		}
 		if ($(".show_tooltip").length) {
 			$(".show_tooltip").click(function(e){
 				e.preventDefault();
