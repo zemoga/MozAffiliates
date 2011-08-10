@@ -233,8 +233,8 @@ div.left-arrow span {
 		linear,
 		left bottom,
 		left top,
-		color-stop(0.25, rgb(244,250,255)),
-		color-stop(0.57, rgb(255,255,255))
+		color-stop(1, rgb(244,250,255)),
+		color-stop(0.9, rgb(255,255,255))
 	);
 	
 	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#f4faff', GradientType=0); 
@@ -294,6 +294,9 @@ div.left-arrow span {
 		background-position: 0 -74px;
 	}
 	#steps-started ul.steps-buttons li.second.active{
+		background-position: 0 -148px;		
+	}
+	#steps-started ul.steps-buttons li.third.active{
 		background-position: 0 -148px;		
 	}
 	#steps-started ul.steps-buttons li span{		
