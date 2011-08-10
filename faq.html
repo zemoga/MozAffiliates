@@ -25,13 +25,14 @@
 			    font-style: normal;
 			}
 		</style>
-		<link href="styles.css?v=1111" rel="stylesheet">
-		<link href="affiliates.css?v=1111" rel="stylesheet">
+		<link href="styles.css?v=1111" rel="stylesheet">		
+		<link href="affiliates.css?v=1111" rel="stylesheet">		
 		<link href="home.css?v=1111" rel="stylesheet">
 		<link href="uniform.default.css?v=1111" rel="stylesheet">
 		<script src="js/script.js?v=1111"></script>
 		<script src="js/affiliates.js?v=1111"></script>
 		<script src="js/jquery.uniform.min.js?v=1111"></script>
+		<script src="js/jquery.placeholder.min.js?v=1111"></script>
 	</head>
 
 	<body id="{section}-{subsection}" class="">
@@ -272,16 +273,18 @@
 							</ul>
 							<div class="clear"></div>
 							<div id="step-content">
-								<h3><span>Category:</span>Firefox</h3>
+								<p class="title">Category:<span> Firefox</span></p>
+								<div class="divider-notch"></div>
 								<ul>
 									<li><img src="img/zemoga/fpo-desktop.png"><div class="description"><input name="radiogroup" type="radio" class="js_uniform"/><p>Firefox <span>for</span>desktop</p><div></div></li>
 									<li><img src="img/zemoga/fpo-mobile.png"><div class="description"><input name="radiogroup" type="radio" class="js_uniform"/><p>Firefox <span>for</span>mobile</p></div></li>
 									<li><img src="img/zemoga/fpo-plugin.png"><div class="description"><input name="radiogroup" type="radio" class="js_uniform"/><p>Firefox Plugins</p></div></li>
 									<div class="clear"></div>
-								</ul>
-								<h3><span>Category:</span>Mozilla</h3>
+								</ul>								
+								<p class="title">Category:<span> Mozilla</span></p>
+								<div class="divider-notch"></div>
 								<ul>
-									<li><img src="img/zemoga/fpo-recruiting.png"><div class="description"><input name="radiogroup2" type="radio" class="js_uniform"/><p>Mozilla Recruiting</p></div></li>
+									<li><img src="img/zemoga/fpo-recruiting.png"><div class="description"><input name="radiogroup2" type="radio" class="js_uniform"/><p>Mozilla Recruiting</p></div></li>									
 									<div class="clear"></div>									
 								</ul>
 							</div>
@@ -303,7 +306,7 @@
 							
 					</div>
 					<div class="highlight-box degraded-box">
-							<div><img src="img/zemoga/user-avatar.jpg" /><span>John Doe</span></div>
+							<div id="user-info"><img src="img/zemoga/user-avatar.jpg" /><span>John Doe</span></div>
 							
 							<div class="divider-medium">&nbsp;</div>
 							<span>Start Spreading the Word!</span>

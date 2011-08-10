@@ -152,7 +152,7 @@ div.tool-tip {
 	padding-top: 14px;
 }
 div.top-arrow span {
-	background: url("img/zemoga/top-arrow.png") no-repeat scroll 0 0 transparent;
+	background: url(img/zemoga/top-arrow.png) no-repeat scroll 0 0 transparent;
     height: 26px;
     margin-left: 130px;
     margin-top: -22px;
@@ -161,7 +161,7 @@ div.top-arrow span {
     z-index: 1;
 }
 div.left-arrow span {
-	background: url("img/zemoga/left-arrow.png") no-repeat scroll 0 0 transparent;
+	background: url(img/zemoga/left-arrow.png) no-repeat scroll 0 0 transparent;
     height: 36px;
     margin-left: -32px;
     margin-top: 5px;
@@ -198,7 +198,23 @@ div.left-arrow span {
 {
 	width: 642px;
 	padding: 0;
-	background-image: url("img/zemoga/vertical-lines.png"), -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%); 
+	background-image: url(img/zemoga/vertical-lines.png), -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%);
+	-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	
+	background-color: #FFF;
+	
+	background-image: url(img/zemoga/vertical-lines.png), -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgb(244,250,255)),
+		color-stop(0.57, rgb(255,255,255))
+	);
+	
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#f4faff', GradientType=0); 
+	
 	
 }
 #steps-started h3
@@ -222,7 +238,7 @@ div.left-arrow span {
 		float: left;
 		color:#474848;
 		padding-top:11px;
-		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
+		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 0 0 #FFFFFF;
 		
 	}
 	
@@ -230,36 +246,45 @@ div.left-arrow span {
 		
 		width: 150px;
 		padding-left: 32px;
-		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
+		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 57% 0 #FFFFFF;
 		
 	}
 	#steps-started ul.steps-buttons li.second{
 		
 		width: 150px;
 		padding-left: 60px;
-		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
+		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 0 0 #FFFFFF;
 		
 	}
+	
 	#steps-started ul.steps-buttons li.third{
 		
 		width: 190px;
 		padding-left: 60px;
-		background: url("/img/zemoga/sprite-steps.png") no-repeat scroll 0 0 #FFFFFF;
+		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 0 0 #FFFFFF;
 		
 	}
 	#steps-started ul.steps-buttons li.active{
-		background-position: 0 100%;
+		background-position: 0 -222px;
 		color: #FFFFFF;
 	}
 	#steps-started ul.steps-buttons li.next-active{
 		background-position: 0 -74px;
+	}
+	#steps-started ul.steps-buttons li.second.active{
+		background-position: 0 -148px;		
 	}
 	#steps-started ul.steps-buttons li span{		
 		font-family: 'MuseoSans500';
 		font-size: 26px;		 
 	}
 #step-content{
-	background: url("/img/zemoga/divider-notch-steps.jpg") repeat-y scroll 0 75px #FFFFFF;
+	background:#FFF;	
+}
+#step-content div.divider-notch
+{
+	background: url(img/zemoga/divider-notch-steps.jpg) no-repeat scroll 0 0 #FFFFFF;
+	padding-top: 50px;	
 }
 
 #step-content h3{
@@ -275,8 +300,32 @@ div.left-arrow span {
 	font-weight: lighter;
 	width: 100px;	
 }
+
+#step-content p.head
+{
+	width:580px;
+	padding: 44px 33px 0;
+	font-size: 22px;
+	color:#39393a;
+}
+#step-content p.head span
+{
+	color:#ae2900;
+}
+#step-content p.title
+{
+	width:580px;
+	padding: 44px 33px 0;
+	font-size: 22px;
+	color:#898989;
+}
+#step-content p.title span
+{
+	color:#39393a;
+}
 #step-content ul{
-	margin: 40px 0 30px 30px;
+	padding: 10px 0 30px 30px;	
+	margin: 0;
 	
 }
 #step-content ul li{
@@ -310,7 +359,29 @@ div.left-arrow span {
 	font-style: italic;
 }
 #footer-content{
-	background-image: url("img/zemoga/vertical-lines.png"), -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%);
+	background-image: -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%);
+	-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
+	
+	background-color: #FFF;
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1, rgb(244,250,255)),
+		color-stop(0.9, rgb(255,255,255))
+	);
+	background-image: -moz-linear-gradient(
+	    center bottom,
+	    rgb(244,250,255) 25%,
+	    rgb(255,255,255) 57%
+	);
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f4faff', EndColorStr='#FFFFFF', GradientType=0);
+	
+	
+	
 	height: 40px;
 	padding: 20px 30px;
 	text-align: right;
@@ -325,11 +396,15 @@ div.left-arrow span {
 }
 
 #footer-content button.save_changes {
-    background: -moz-linear-gradient(center top , #669BE1 0%, #5784BF 100%) repeat scroll 0 0 transparent;
-    border: medium none;
-    box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
-    color: #FFFFFF;
-    padding-bottom: 10px;
+   background-color: #669BE1;
+	background: -moz-linear-gradient(center top, #669BE1 0%, #5784BF 100%) repeat 0 0;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5784BF), color-stop(1, #669BE1) );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#669BE1', endColorstr='#5784BF',GradientType=0 );
+	border: none;
+	box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
+	color: #fff;
+	padding-bottom: 10px;
+    
 }
 
 #footer-content button {
@@ -341,6 +416,14 @@ div.left-arrow span {
     cursor: pointer;
     font-size: 13px;
     padding: 8px 18px;
+}
+#footer-content button.back{
+	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
+	background: none repeat scroll 0 0 white;
+	border: 1px solid #E6EBF1;
+	color: #5E5E5E;
+	float: left;	
+	
 }
 /*side bar*/
 #sidebar{
@@ -363,6 +446,9 @@ div.degraded-box
 	    rgb(255,255,255) 57%
 	);
 	
+}
+#user-info span{
+	padding:  0 10px;
 }
 #head-box{
 	border-bottom: 1px solid #B3C8D7;

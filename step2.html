@@ -26,12 +26,14 @@
 			}
 		</style>
 		<link href="styles.css?v=1111" rel="stylesheet">
-		<link href="affiliates.css?v=1111" rel="stylesheet">
+		
+		<link href="affiliates.css?v=1111" rel="stylesheet">		
 		<link href="home.css?v=1111" rel="stylesheet">
 		<link href="uniform.default.css?v=1111" rel="stylesheet">
 		<script src="js/script.js?v=1111"></script>
 		<script src="js/affiliates.js?v=1111"></script>
 		<script src="js/jquery.uniform.min.js?v=1111"></script>
+		<script src="js/jquery.placeholder.min.js?v=1111"></script>
 	</head>
 
 	<body id="{section}-{subsection}" class="">
@@ -266,28 +268,24 @@
 						<div id="steps-started" class="highlight-box">
 							<h3>Follow these easy steps to get started:</h3>
 							<ul class="steps-buttons">
-								<li class="first active"><span>1</span>PICK A CATEGORY</li>
-								<li class="second next-active"><span>2</span>PICK A BANNER</li>
-								<li class="third"><span>3</span>CONFIGURE & POST</li>
+								<li class="first"><span>1</span>PICK A CATEGORY</li>
+								<li class="second active"><span>2</span>PICK A BANNER</li>
+								<li class="third next-active"><span>3</span>CONFIGURE & POST</li>
 							</ul>
 							<div class="clear"></div>
 							<div id="step-content">
-								<h3><span>Category:</span>Firefox</h3>
+								<p class="head">Now choose the type <span>Firefox for Mobile</span> banner you want to display on your website or blog:</p>
+								<div class="divider-notch"></div>
 								<ul>
 									<li><img src="img/zemoga/fpo-desktop.png"><div class="description"><input name="radiogroup" type="radio" class="js_uniform"/><p>Firefox <span>for</span>desktop</p><div></div></li>
-									<li><img src="img/zemoga/fpo-mobile.png"><div class="description"><input name="radiogroup" type="radio" class="js_uniform"/><p>Firefox <span>for</span>mobile</p></div></li>
-									<li><img src="img/zemoga/fpo-plugin.png"><div class="description"><input name="radiogroup" type="radio" class="js_uniform"/><p>Firefox Plugins</p></div></li>
+									<li><img src="img/zemoga/fpo-mobile.png"><div class="description"><input name="radiogroup" type="radio" class="js_uniform"/><p>Firefox <span>for</span>mobile</p></div></li>									
 									<div class="clear"></div>
-								</ul>
-								<h3><span>Category:</span>Mozilla</h3>
-								<ul>
-									<li><img src="img/zemoga/fpo-recruiting.png"><div class="description"><input name="radiogroup2" type="radio" class="js_uniform"/><p>Mozilla Recruiting</p></div></li>
-									<div class="clear"></div>									
-								</ul>
+								</ul>								
 							</div>
 							<div>
 								<div id="footer-content" class="buttons">
-									<button class="save_changes">Continue to Step 2 »</button>
+									<button class="back">« back</button>
+									<button class="save_changes">Continue to Step 3 »</button>
 								</div>
 							</div>							
 						</div>
@@ -303,7 +301,7 @@
 							
 					</div>
 					<div class="highlight-box degraded-box">
-							<div><img src="img/zemoga/user-avatar.jpg" /><span>John Doe</span></div>
+							<div id="user-info"><img src="img/zemoga/user-avatar.jpg" /><span>John Doe</span></div>
 							
 							<div class="divider-medium">&nbsp;</div>
 							<span>Start Spreading the Word!</span>
