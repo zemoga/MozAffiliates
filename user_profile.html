@@ -8,8 +8,8 @@
 		<link href="user_profile.css?v=1111" rel="stylesheet">
 		<link href="uniform.default.css?v=1111" rel="stylesheet">
 		
-		<script src="js/affiliates.js?v=1111"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?v=1111"></script>
+		<script src="js/affiliates.js?v=1111"></script>
 		<script src="js/jquery.placeholder.min.js?v=1111"></script>
 		<script src="js/jquery.uniform.min.js?v=1111"></script>
 	</head>
@@ -144,7 +144,7 @@
 										</li>
 									</ul>
 								</li>
-								<li id="nav-main-about"  class="current last">
+								<li id="nav-main-about"  class="last">
 									<a aria-haspopup="true" aria-owns="nav-main-about-submenu" tabindex="0" href="/en-US/about/">About</a>
 									<ul id="nav-main-about-submenu" aria-expanded="false">
 										<li  class="first">
@@ -210,13 +210,13 @@
 								</li>
 							</ul>
 						</div>
-						<form action="" method="post" id="profile-form">
+						<form action="#" method="post" id="profile-form">
 							<p class="required_label"><span>*</span> Required</p>
 							<div class="section">
 								<div class="fields">
 									<h4>CHOOSE YOUR AVATAR</h4>
 									<div class="user_avatar">
-										<img src="img/zemoga/user_avatar_default.png" />
+										<img src="img/zemoga/user_avatar_default.png" alt="user avatar" />
 									</div>
 									<div class="file_field">	
 										<label class="enable_avatar"><input type="checkbox" /> Enable Avatars</label>
@@ -230,7 +230,7 @@
 							</div><!-- end .section -->
 							<div class="section">
 								<div class="fields">
-									<h4>USERNAME <span class="required_star">*</span> <a href="#" class="help_bulb show_tooltip" rel="tooltip_username"></a> </h4>
+									<h4>USERNAME <span class="required_star">*</span> <a href="#" class="help_bulb show_tooltip" target="tooltip_username"></a> </h4>
 									<input class="processing" type="text" id="username" name="username" value="" required />
 									<p class="msg_warning">Username not available</p>
 									<div class="tool-tip left-arrow" id="tooltip_username"><span></span><p>Your username is your online identity, so use somenthing you are comfortable with everyone seeing. Take into account that you wont be able to change your username in the future.</p></div>
@@ -263,7 +263,7 @@
 							</div><!-- end .section -->
 							<div class="section">
 								<div class="fields">
-									<h4>ADDRESS <a href="#" class="help_bulb show_tooltip" rel="tooltip_address"></a></h4>
+									<h4>ADDRESS <a href="#" class="help_bulb show_tooltip" target="tooltip_address"></a></h4>
 									<input type="text" id="street" name="street" value="" placeholder="Street" />
 									<input type="text" id="city" name="city" value="" placeholder="City" />
 									<input type="text" id="zip-code" name="zip-code" value="" pattern="\d{1,5}" maxlength="5" placeholder="Zip or Postal Code" />
@@ -279,7 +279,7 @@
 							</div><!-- end .section -->
 							<div class="section">
 								<div class="fields">
-									<h4>LANGUAGE <a href="#" class="help_bulb show_tooltip" rel="tooltip_language"></a></h4>
+									<h4>LANGUAGE <a href="#" class="help_bulb show_tooltip" target="tooltip_language"></a></h4>
 									<input type="text" id="language" name="language" value="" placeholder="English" />
 									<div class="tool-tip left-arrow" id="tooltip_language"><span></span><p>Your country and language were automatically detected by your IP location, but you are welcome to change them here.</p></div>
 								</div>
@@ -340,24 +340,11 @@
 								<ul class="">
 									<li class="open-pane" data-wt_uri="" data-wt_ti="">
 										<h3>Get Monthly News</h3>
-										<div class="email-field" class="field">
+										<div class="email-field field">
 											<span class="error-wrapper">
-												<input
-												class="email"
-												name="email"
-												type="email"
-												placeholder="Your Email Address"
-												value=""
-												class="placeholder">
+												<input class="email" name="email" type="email" placeholder="Your Email Address" value="">
 											</span>
-											<a class="email-open"
-											href="/en-US/newsletter/"
-											onclick="dcsMultiTrack('DCS.dcssip', 'www.mozilla.com',
-											'DCS.dcsuri', '/mainstream_newsletter/step1',
-											'WT.ti', 'Link: Monthly News - First Step',
-											'WT.dl', 99,
-											'WT.nv', 'Content',
-											'WT.ac', 'Newsletter');">»</a>
+											<a class="email-open" href="/en-US/newsletter/">&raquo;</a>
 										</div>
 									</li>
 									<li class="form-pane">

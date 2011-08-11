@@ -161,13 +161,8 @@ input[type="password"]{
 	box-shadow:0 0 3px rgba(0,0,0,0.2) inset;
 	background: #FFFFFF;	
 }
-/*input:invalid {
-	/*-webkit-box-shadow:0 0 3px rgba(255,0,0,0.2) inset !important;
-	-moz-box-shadow:0 0 3px rgba(255,0,0,0.2) inset !important;
-	box-shadow:0 0 3px rgba(255,0,0,0.2) inset !important;*/
-}*/
 
-div.divider-medium{
+div.divider-medium {
 	width:100%;
 	height:20px;
 	background:transparent url(img/zemoga/sprites.png) no-repeat center -2px;
@@ -216,22 +211,25 @@ div.left-arrow span {
 }
 /*steps for affiliates*/
 #content{
-	width: 650px;
-	float: left;	
+	float: left;
+	width: 650px;	
+}
+#content-nav ul {
+	overflow: hidden;
 }
 #content-nav ul li {
 	background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #e6ebf1;
-    border-radius: 4px 4px 4px 4px;    
+    border-radius: 4px 4px 4px 4px; 
+    color:#5e5e5e;  
     cursor: pointer;
-    padding: 7px 0px;
-    width: 154px;
     float: left;
-    margin: 0 5px 5px 0;
-    list-style: none;
-    color:#5e5e5e;
     font-family: 'MuseoSans500';
+    list-style: none; 
+    margin: 0 5px 5px 0;
+    padding: 7px 0px;
     text-align: center;
+    width: 154px;
 }
 #content-nav ul li.active {
 	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
@@ -247,17 +245,9 @@ div.left-arrow span {
 	
 	background-color: #FFF;
 	
-	background-image: url(img/zemoga/vertical-lines.png), -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(1, rgb(244,250,255)),
-		color-stop(0.9, rgb(255,255,255))
-	);
+	background-image: url(img/zemoga/vertical-lines.png), -webkit-gradient( linear, left bottom, left top, color-stop(1, rgb(244,250,255)), color-stop(0.9, rgb(255,255,255)));
 	
-	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#f4faff', GradientType=0); 
-	
-	
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#f4faff', GradientType=0);
 }
 #steps-started h3 {
 	font-family: 'MuseoSans500';
@@ -268,8 +258,9 @@ div.left-arrow span {
 }
 #steps-started ul.steps-buttons{
 	background: none repeat scroll 0 0 #d3dfe7;
-	/*border: 1px solid #b4c8d6;*/	
-	
+	/*border: 1px solid #b4c8d6;*/
+	margin-bottom: 0;
+	overflow: hidden;
 }
 	#steps-started ul.steps-buttons li{
 		background: none repeat scroll 0 0 #FFFFFF;
@@ -280,29 +271,22 @@ div.left-arrow span {
 		color:#474848;
 		padding-top:11px;
 		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 0 0 #FFFFFF;
-		
 	}
 	
 	#steps-started ul.steps-buttons li.first{
-		
 		width: 150px;
 		padding-left: 32px;
 		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 57% 0 #FFFFFF;
-		
 	}
 	#steps-started ul.steps-buttons li.second{
-		
 		width: 150px;
 		padding-left: 60px;
 		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 0 0 #FFFFFF;
-		
 	}
-	
 	#steps-started ul.steps-buttons li.third{
 		width: 190px;
 		padding-left: 60px;
 		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 0 0 #FFFFFF;
-		
 	}
 	#steps-started ul.steps-buttons li.active{
 		background-position: 0 -222px;
@@ -361,10 +345,10 @@ div.left-arrow span {
 #step-content p.title span{
 	color:#39393a;
 }
-#step-content ul{
-	padding: 10px 0 30px 30px;	
+#step-content ul{	
 	margin: 0;
-	
+	overflow: hidden;
+	padding: 10px 0 30px 30px;
 }
 #step-content ul li{
 	background: none repeat scroll 0 0 #FFFFFF;
@@ -497,6 +481,7 @@ div.degraded-box{
 	margin: 0;	
 }
 #sidebar-nav ul{
+	overflow: hidden;
 	text-align: right;
 }
 #sidebar-nav ul li{

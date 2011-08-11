@@ -79,8 +79,14 @@
 	#content h2 {
 		font-size: 40px;
 	}
-		#content h2 spam {
+		#content h2 span {
 			display: block;
+			font-family: georgia,serif;
+			font-size: 40px;
+		    font-style: italic;
+		    font-weight: normal;
+			letter-spacing: normal;
+			text-transform: none;
 		}
 	#content p {
 		font-size: 20px;

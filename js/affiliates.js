@@ -35,10 +35,10 @@ var HomePage = {
 			});
 			$(".show_tooltip").hover(
 				function(e){
-					HomePage.toggleToolTip($(this).attr('rel'), e.type);
+					HomePage.toggleToolTip($(this).attr('target'), e.type);
 				}, 
 				function(e){
-					HomePage.toggleToolTip($(this).attr('rel'), e.type);
+					HomePage.toggleToolTip($(this).attr('target'), e.type);
 				});
 		}
 		if($.browser.msie) {

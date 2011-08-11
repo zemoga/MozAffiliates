@@ -7,8 +7,8 @@
 		<link href="affiliates.css?v=1111" rel="stylesheet">
 		<link href="home.css?v=1111" rel="stylesheet">
 		
-		<script src="js/affiliates.js?v=1111"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?v=1111"></script>
+		<script src="js/affiliates.js?v=1111"></script>
 		<script src="js/jquery.placeholder.min.js?v=1111"></script>
 	</head>
 
@@ -142,7 +142,7 @@
 										</li>
 									</ul>
 								</li>
-								<li id="nav-main-about"  class="current last">
+								<li id="nav-main-about"  class="last">
 									<a aria-haspopup="true" aria-owns="nav-main-about-submenu" tabindex="0" href="/en-US/about/">About</a>
 									<ul id="nav-main-about-submenu" aria-expanded="false">
 										<li  class="first">
@@ -182,7 +182,7 @@
 				<!-- end #header -->
 				
 				<div id="home-registration-forms" class="highlight-box">
-					<form action="" method="post" id="login-form">
+					<form action="#" method="post" id="login-form">
 						<input type="hidden" name="action" value="login" />
 						<input type="text" id="login-username" name="login-username" value="" placeholder="Username" required />
 						<input type="password" id="login-password" name="login-password" value="" placeholder="Password" required />
@@ -199,7 +199,7 @@
 						Sign up now and start spreading the word.
 					</p>
 					
-					<form action="" method="post" id="register-form">
+					<form action="#" method="post" id="register-form">
 						<input type="hidden" name="action" value="register" />
 						<input type="text" id="register-full-name" name="register-full-name" value="" placeholder="Your full name" maxlength="30" required />
 						<input type="email" id="register-email" name="register-email" value="" placeholder="Your email address" maxlength="75" required />
@@ -222,9 +222,11 @@
 				
 				<div id="content" class="background_illo">
 					<h2>Become a Firefox <span>Affiliate Today!</span></h2>
-					<p>The Firefox Affiliates program is a great way to share your love of Mozilla Firefox. Host Firefox buttons on your site and climb your way to fame on the Affiliates leaderboard. <a title="Learn more" href="#" class="show_tooltip" rel="tooltip_home">Learn more &raquo;</a>
-						<div class="tool-tip top-arrow" id="tooltip_home"><span></span><p>Firefox Affiliates is the go-to place for Firefox fans and Mozillians to get promotional buttons and links that encourage users to download Firefox. We do send out prizes and gifts to our affiliates from time to time, but Firefox Affiliates does not offer monetary rewards for hosting Firefox buttons. That warm, fuzzy feeling in your heart will have to do.<br><br>Sign up and become an affiliate today!</p></div>
-					</p>
+					<p>The Firefox Affiliates program is a great way to share your love of Mozilla Firefox. Host Firefox buttons on your site and climb your way to fame on the Affiliates leaderboard. <a title="Learn more" href="#" class="show_tooltip" target="tooltip_home">Learn more &raquo;</a></p>
+					<div class="tool-tip top-arrow" id="tooltip_home">
+						<span></span>
+						<p>Firefox Affiliates is the go-to place for Firefox fans and Mozillians to get promotional buttons and links that encourage users to download Firefox. We do send out prizes and gifts to our affiliates from time to time, but Firefox Affiliates does not offer monetary rewards for hosting Firefox buttons. That warm, fuzzy feeling in your heart will have to do.<br><br>Sign up and become an affiliate today!</p>
+					</div>
 					<div class="divider-medium">&nbsp;</div>
 					<button class="share_twitter"> Share on Twitter &raquo;</button>
 					<button class="share_facebook"> Share on Facebook &raquo;</button>
@@ -257,7 +259,7 @@
 								<ul class="">
 									<li class="open-pane" data-wt_uri="" data-wt_ti="">
 										<h3>Get Monthly News</h3>
-										<div class="email-field" class="field">
+										<div class="email-field field">
 											<span class="error-wrapper">
 												<input class="email" name="email" type="email" placeholder="Your Email Address" value="">
 											</span>
