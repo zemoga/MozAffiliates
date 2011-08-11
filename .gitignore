@@ -1,3 +1,8 @@
 .DS_Store
 *.swp
 *.tmp*
+optimization/unused-selectors-post.csv
+
+optimization/unused-selectors-pre.csv
+
+optimization/sitemap.xml
