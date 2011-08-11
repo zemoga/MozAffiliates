@@ -556,4 +556,58 @@ p.georgia-font span{
 	padding: 0 30px 30px;
 	
 }
- 
+
+#banner-user div.banner-img{
+	width: 280px;
+	height:385px;
+	float: left;
+	background: #F6F9FD;
+	border: solid 1px #EDEDED;
+	text-align: center;
+	padding-top: 20px;
+	
+} 
+#banner-user div.banner-info{
+	width: 280px;
+	float: left;
+	padding-left: 10px;
+}
+#banner-user div.options{
+	
+	border-bottom: dashed 1px #B5C5D5; 
+	padding: 10px; 
+	
+}
+
+#banner-user div.fields h4
+{
+font-family: 'MuseoSans500', sans-serif;
+font-size: 14px;
+font-style: normal;
+margin: 0 0 10px;
+position: relative;
+}
+#banner-user div.fields
+{
+	width: 130px;
+	float: left;
+	
+} 
+#banner-user div.code h3
+{
+	font-family: 'MuseoSans500', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color:#484848;
+	padding-left: 0;
+	
+}
+#banner-user div.code p
+{
+	font-family: Georgia,serif;
+	font-size: 14px;
+	color:#9e9e9e;
+	font-style: italic;
+	
+}
+
