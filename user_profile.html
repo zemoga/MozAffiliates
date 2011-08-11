@@ -2,70 +2,20 @@
 <html lang="en-US" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=1024">
 		<title>Mozilla Firefox Web Browser — {title}</title>
-		<meta name="og:image" content="http://mozcom-cdn.mozilla.net/img/firefox-100.jpg">
-		<meta name="Description" content="">
-		<style>
-			/* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
-			@font-face {
-				font-family: 'MetaBlack';        
-				src: url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.eot');
-        		src: local('☺'), url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.woff') format('woff');
-				font-weight: bold;
-			}
-			@font-face {
-			    font-family: 'MuseoSans500';
-			    src: url('fonts/MuseoSans_500-webfont.eot');
-			    src: url('fonts/MuseoSans_500-webfont.eot?iefix') format('eot'),
-			         url('fonts/MuseoSans_500-webfont.woff') format('woff'),
-			         url('fonts/MuseoSans_500-webfont.ttf') format('truetype'),
-			         url('fonts/MuseoSans_500-webfont.svg#webfontkQkWxTED') format('svg');
-			    font-weight: normal;
-			    font-style: normal;
-			}
-		</style>
 		<link href="styles.css?v=1111" rel="stylesheet">
 		<link href="affiliates.css?v=1111" rel="stylesheet">
 		<link href="user_profile.css?v=1111" rel="stylesheet">
 		<link href="uniform.default.css?v=1111" rel="stylesheet">
 		
-		<script src="js/script.js?v=1111"></script>
 		<script src="js/affiliates.js?v=1111"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?v=1111"></script>
 		<script src="js/jquery.placeholder.min.js?v=1111"></script>
 		<script src="js/jquery.uniform.min.js?v=1111"></script>
 	</head>
-
 	<body id="affiliates" class="">
-
-		<script>
-			// <![CDATA[
-			// add classes to body to indicate browser version and JavaScript availabiliy
-			if (document.body.className == '') {
-				document.body.className = 'js';
-			} else {
-				document.body.className += ' js';
-			}
-
-			if (gPlatform == 1) {
-				document.body.className += ' platform-windows';
-			} else if (gPlatform == 3 || gPlatform == 4) {
-				document.body.className += ' platform-mac';
-			} else if (gPlatform == 2) {
-				document.body.className += ' platform-linux';
-			}
-
-			// ]]>
-		</script>
-
-		<noscript>
-			<div id="no-js-feature">
-			</div>
-		</noscript>
-
 		<div id="wrapper">
 			<div id="doc">
-
 				<div id="nav-access">
 					<a href="#nav-main">skip to navigation</a>
 					<a href="#lang_form">switch language</a>
@@ -75,10 +25,9 @@
 				<div id="header">
 					<div>
 						<h1>
-						<a href="/en-US/firefox/" title="Back to home page">Mozilla Firefox</a>
+							<a href="/en-US/firefox/" title="Back to home page">Mozilla Firefox</a>
 						</h1>
 						<a href="http://www.mozilla.org/" class="mozilla">mozilla</a>
-
 						<!-- start menu #nav-main -->
 						<div id="nav-main" role="navigation">
 							<ul role="menubar">
@@ -730,15 +679,12 @@
 		</div>
 		<div id="footer">
 			<div id="footer-contents" role="contentinfo">
-
 				<div id="footer-right">
-
 					<form id="lang_form" dir="ltr" method="get">
 						<div>
 							<label for="flang">
 								Other Languages
 							</label>
-
 							<select id="flang" name="flang" dir="ltr" onchange="this.form.submit()">
 								<option value="af">Afrikaans</option>
 								<option value="ak">Akan</option>
@@ -831,13 +777,10 @@
 							</noscript>
 						</div>
 					</form>
-
 				</div>
-
 				<h3 id="footer-logo">
-				<a href="/en-US/firefox/" title="Back to home page">Firefox</a>
+					<a href="/en-US/firefox/" title="Back to home page">Firefox</a>
 				</h3>
-
 				<!-- start menu #footer-menu -->
 				<div id="footer-menu" role="navigation">
 					<ul>
@@ -989,7 +932,6 @@
 					</ul>
 				</div>
 				<!-- end menu #footer-menu -->
-
 				<div id="copyright">
 					<p id="footer-links">
 						<a href="/en-US/privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
@@ -998,34 +940,12 @@
 					</p>
 					<p>
 						Except where otherwise
-						<a href="/en-US/about/legal.html#site">noted</a>, content on this site is licensed under the
-						<br />
+						<a href="/en-US/about/legal.html#site">noted</a>, content on this site is licensed under the <br />
 						<a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.
 					</p>
 				</div>
-
 			</div>
 		</div>
 		<!-- end #footer -->
-		
-		<!-- Confirm Params for Affiliates Site
-		<script type="text/javascript" src="http://mozcom-cdn.mozilla.net/includes/min/min.js?g=js_stats"></script>
-		<script type="text/javascript">
-			//<![CDATA[
-			var _tag=new WebTrends({
-				"dcsid":"dcsf9nqmj10000clgc14f05rf_2u7t",
-				"rate":50,
-				"fpcdom":"mozilla.com"
-			});
-			_tag.dcsGetId();
-			//]]>
-		</script>
-		<script>
-			//<![CDATA[
-			_tag.dcsCollect();
-			//]]>
-		</script>
-		-->
-		
 	</body>
 </html>
