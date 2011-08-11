@@ -2,19 +2,7 @@
 <html lang="en-US" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=1024">
 		<title>Mozilla Firefox Web Browser — {title}</title>
-		<meta name="og:image" content="http://mozcom-cdn.mozilla.net/img/firefox-100.jpg">
-		<meta name="Description" content="">
-		<style>
-			/* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
-			@font-face {
-				font-family: 'MetaBlack';        
-				src: url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.eot');
-        		src: local('☺'), url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.woff') format('woff');
-				font-weight: bold;
-			}
-		</style>
 		<link href="styles.css?v=1111" rel="stylesheet">
 		<link href="affiliates.css?v=1111" rel="stylesheet">
 		<link href="home.css?v=1111" rel="stylesheet">
@@ -25,43 +13,17 @@
 	</head>
 
 	<body id="affiliates" class="">
-
-		<script>
-			// <![CDATA[
-			// add classes to body to indicate browser version and JavaScript availabiliy
-			if (document.body.className == '') {
-				document.body.className = 'js';
-			} else {
-				document.body.className += ' js';
-			}
-
-			if (gPlatform == 1) {
-				document.body.className += ' platform-windows';
-			} else if (gPlatform == 3 || gPlatform == 4) {
-				document.body.className += ' platform-mac';
-			} else if (gPlatform == 2) {
-				document.body.className += ' platform-linux';
-			}
-
-			// ]]>
-		</script>
-
-		<noscript>
-			<div id="no-js-feature"></div>
-		</noscript>
-
 		<div id="wrapper">
 			<div id="doc">
 				<div id="nav-access">
 					<a href="#nav-main">skip to navigation</a>
 					<a href="#lang_form">switch language</a>
 				</div>
-
 				<!-- start #header -->
 				<div id="header">
 					<div>
 						<h1>
-						<a href="/en-US/firefox/" title="Back to home page">Mozilla Firefox</a>
+							<a href="/en-US/firefox/" title="Back to home page">Mozilla Firefox</a>
 						</h1>
 						<a href="http://www.mozilla.org/" class="mozilla">mozilla</a>
 
@@ -225,7 +187,7 @@
 						<input type="hidden" name="action" value="login" />
 						<input type="text" id="login-username" name="login-username" value="" placeholder="Username" required />
 						<input type="password" id="login-password" name="login-password" value="" placeholder="Password" required />
-						<input type="submit" value="Log in »" />
+						<input type="submit" value="Log in &raquo;" />
 						<input type="checkbox" id="login-remember-me" name="login-remember-me" value="true" />
 						<label for="login-remember-me">Remember me</label>
 						<a href="#" title="Forgot it?">Forgot it?</a>
@@ -245,7 +207,7 @@
 						<input type="password" id="register-password" name="register-password" value="" placeholder="Your password" required />
 						<input class="agree_chk" type="checkbox" id="register-agreement" name="register-agreement" value="true" required />
 						<label for="register-agreement">I agree to the Firefox Affiliates <a href="/tos" title="terms of service">terms of service</a> and Mozilla <a href="http://www.mozilla.com/en-US/privacy-policy.html" title="Privacy Policy">Privacy Policy</a></label>
-						<input class="register" type="submit" value="Register »" />
+						<input class="register" type="submit" value="Register &raquo;" />
 					</form>
 				</div><!-- end #home-registration-forms -->
 				
@@ -260,72 +222,47 @@
 				</div><!-- end #main-feature -->
 				
 				<div id="content" class="background_illo">
-					<h2>Become a Firefox <spam>Affiliate Today!</spam></h2>
+					<h2>Become a Firefox <span>Affiliate Today!</span></h2>
 					<p>The Firefox Affiliates program is a great way to share your love of Mozilla Firefox. Host Firefox buttons on your site and climb your way to fame on the Affiliates leaderboard. <a title="Learn more" href="#" class="show_tooltip" rel="tooltip_home">Learn more &raquo;</a>
 						<div class="tool-tip top-arrow" id="tooltip_home"><span></span><p>Firefox Affiliates is the go-to place for Firefox fans and Mozillians to get promotional buttons and links that encourage users to download Firefox. We do send out prizes and gifts to our affiliates from time to time, but Firefox Affiliates does not offer monetary rewards for hosting Firefox buttons. That warm, fuzzy feeling in your heart will have to do.<br><br>Sign up and become an affiliate today!</p></div>
 					</p>
 					<div class="divider-medium">&nbsp;</div>
-					
 					<button class="share_twitter"> Share on Twitter &raquo;</button>
 					<button class="share_facebook"> Share on Facebook &raquo;</button>
 				</div><!-- end #content div -->
-				
 			</div><!-- end #doc -->
 		</div><!-- end #wrapper -->
-
-		<div class="clear">
-		</div>
-
+		<div class="clear"></div>
 		<!-- start #footer -->
 		<div id="sub-footer">
 			<div id="sub-footer-contents">
 				<h3>
-				Let’s be
-				<span>friends!</span>
+					Let’s be <span>friends!</span>
 				</h3>
 				<ul>
 					<li id="footer-twitter">
-						<a href="http://twitter.com/firefox"
-						onclick="dcsMultiTrack('DCS.dcssip', 'twitter.com', 'DCS.dcsuri', '/firefox', 'WT.ti', 'Twitter');"> Twitter</a>
+						<a href="http://twitter.com/firefox"> Twitter</a>
 					</li>
 					<li id="footer-facebook">
-						<a href="http://facebook.com/Firefox"
-						onclick="dcsMultiTrack('DCS.dcssip', 'facebook.com', 'DCS.dcsuri', '/Firefox', 'WT.ti', 'Facebook');"> Facebook</a>
+						<a href="http://facebook.com/Firefox"> Facebook</a>
 					</li>
 					<li id="footer-connect">
-						<a href="/en-US/firefox/connect/"
-						onclick="dcsMultiTrack('DCS.dcsuri', '/en-US/firefox/connect/', 'WT.ti', 'Connect');"> More Ways to Connect</a>
+						<a href="/en-US/firefox/connect/"> More Ways to Connect</a>
 					</li>
 				</ul>
 				<div id="sub-footer-newsletter">
-
-					<div class="newsletter-signup   " id="newsletter">
+					<div class="newsletter-signup" id="newsletter">
 						<div class="container">
-
 							<form class="email-form inline-email-form" action="#subscribe-form" method="post">
 								<input type="hidden" name="target" value="inline" />
-
 								<ul class="">
 									<li class="open-pane" data-wt_uri="" data-wt_ti="">
 										<h3>Get Monthly News</h3>
 										<div class="email-field" class="field">
 											<span class="error-wrapper">
-												<input
-												class="email"
-												name="email"
-												type="email"
-												placeholder="Your Email Address"
-												value=""
-												class="placeholder">
+												<input class="email" name="email" type="email" placeholder="Your Email Address" value="">
 											</span>
-											<a class="email-open"
-											href="/en-US/newsletter/"
-											onclick="dcsMultiTrack('DCS.dcssip', 'www.mozilla.com',
-											'DCS.dcsuri', '/mainstream_newsletter/step1',
-											'WT.ti', 'Link: Monthly News - First Step',
-											'WT.dl', 99,
-											'WT.nv', 'Content',
-											'WT.ac', 'Newsletter');">»</a>
+											<a class="email-open" href="/en-US/newsletter/">&raquo;</a>
 										</div>
 									</li>
 									<li class="form-pane">
@@ -336,7 +273,6 @@
 											<span>Please read the Mozilla Privacy Policy and agree by checking the box.</span>
 										</p>
 										<div class="form-details">
-
 											<div class="field country-field">
 												<select class="country" name="country">
 													<option value="">Select country</option>
@@ -615,13 +551,7 @@
 												</label>
 											</div>
 
-											<input name="submit" type="submit" value="Sign me up!" class="subscribe"
-											onclick="dcsMultiTrack('DCS.dcssip', 'www.mozilla.com',
-											'DCS.dcsuri', '/mainstream_newsletter/signup',
-											'WT.ti', 'Link: Sign me up - Second Step',
-											'WT.dl', 99,
-											'WT.nv', 'Content',
-											'WT.ac', 'Newsletter');">
+											<input name="submit" type="submit" value="Sign me up!" class="subscribe">
 											<p class="footnote">
 												We will only send you Mozilla-related information.
 											</p>
@@ -638,24 +568,18 @@
 							</form>
 						</div>
 					</div>
-
 				</div>
-
-				<div class="clear">
-				</div>
+				<div class="clear"></div>
 			</div>
 		</div>
 		<div id="footer">
 			<div id="footer-contents" role="contentinfo">
-
 				<div id="footer-right">
-
 					<form id="lang_form" dir="ltr" method="get">
 						<div>
 							<label for="flang">
 								Other Languages
 							</label>
-
 							<select id="flang" name="flang" dir="ltr" onchange="this.form.submit()">
 								<option value="af">Afrikaans</option>
 								<option value="ak">Akan</option>
@@ -748,13 +672,10 @@
 							</noscript>
 						</div>
 					</form>
-
 				</div>
-
 				<h3 id="footer-logo">
-				<a href="/en-US/firefox/" title="Back to home page">Firefox</a>
+					<a href="/en-US/firefox/" title="Back to home page">Firefox</a>
 				</h3>
-
 				<!-- start menu #footer-menu -->
 				<div id="footer-menu" role="navigation">
 					<ul>
@@ -906,7 +827,6 @@
 					</ul>
 				</div>
 				<!-- end menu #footer-menu -->
-
 				<div id="copyright">
 					<p id="footer-links">
 						<a href="/en-US/privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
@@ -924,25 +844,5 @@
 			</div>
 		</div>
 		<!-- end #footer -->
-		
-		<!-- Confirm Params for Affiliates Site
-		<script type="text/javascript" src="http://mozcom-cdn.mozilla.net/includes/min/min.js?g=js_stats"></script>
-		<script type="text/javascript">
-			//<![CDATA[
-			var _tag=new WebTrends({
-				"dcsid":"dcsf9nqmj10000clgc14f05rf_2u7t",
-				"rate":50,
-				"fpcdom":"mozilla.com"
-			});
-			_tag.dcsGetId();
-			//]]>
-		</script>
-		<script>
-			//<![CDATA[
-			_tag.dcsCollect();
-			//]]>
-		</script>
-		-->
-		
 	</body>
 </html>
