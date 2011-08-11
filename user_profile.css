@@ -6,9 +6,9 @@
 	#user-profile-forms .header {
 		margin: -15px -25px 0;
 	}
-	#user-profile-forms .update_details {
+	/*#user-profile-forms .update_details {
 		float: right;
-	}
+	}*/
 	#user-profile-forms .user_info {
 		background: none repeat scroll 0 0 #FFFFFF;
 		border-top: 1px solid #B4C8D6;
@@ -18,9 +18,9 @@
 		padding: 20px 30px;
     	position: relative;
 	}
-		#user-profile-forms .user_info button {
+		/*#user-profile-forms .user_info button {
 			margin-top: 6px;
-		}
+		}*/
 	#user-profile-forms .user_data {
 		list-style: none;
 		margin: 0;
