@@ -89,18 +89,18 @@
 	display: block;
 	left: 70px;
 }
-.second_section .arrow_indicator {
+/*.second_section .arrow_indicator {
 	display: block;
 	left: 230px;
-}
+}*/
 .third_section .arrow_indicator {
 	display: block;
 	left: 390px;
 }
-.fourth_section .arrow_indicator {
+/*.fourth_section .arrow_indicator {
 	display: block;
 	left: 550px;
-}
+}*/
 	
 	
 	
@@ -161,11 +161,11 @@ input[type="password"]{
 	box-shadow:0 0 3px rgba(0,0,0,0.2) inset;
 	background: #FFFFFF;	
 }
-input:invalid {
+/*input:invalid {
 	/*-webkit-box-shadow:0 0 3px rgba(255,0,0,0.2) inset !important;
 	-moz-box-shadow:0 0 3px rgba(255,0,0,0.2) inset !important;
 	box-shadow:0 0 3px rgba(255,0,0,0.2) inset !important;*/
-}
+}*/
 
 div.divider-medium{
 	width:100%;
@@ -335,13 +335,13 @@ div.left-arrow span {
 	font-size: 20px; 
 	padding:  20px 20px 0;
 }	
-#step-content h3 span{
+/*#step-content h3 span{
 	color:#000;
 	font-size: 20px;
 	text-transform: none;
 	font-weight: lighter;
 	width: 100px;	
-}
+}*/
 
 #step-content p.head{
 	width:580px;
@@ -426,12 +426,12 @@ div.left-arrow span {
 	border-top: 1px solid #B0C1D2;
 }
 
-#footer-content .section .buttons button {
+/*#footer-content .section .buttons button {
     font-family: Georgia,serif;
     font-size: 120%;
     font-style: italic;
     margin-right: 8px;
-}
+}*/
 
 #footer-content button.save_changes {
    background-color: #669BE1;
