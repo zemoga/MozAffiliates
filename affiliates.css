@@ -820,7 +820,7 @@ div.block-space{
 	.banners_content .banner_section .col_3 {
 		float: left;
 		border-top: 1px solid #DFDFDF;
-		padding-top: 20px;
+		padding-top: 15px;
 	}
 	.banners_content .banner_section .col_1 {
 		font-family: MetaWebPro;
@@ -838,8 +838,15 @@ div.block-space{
 		width: 280px;
 	}
 	.banners_content .banner_section .col_3 {
+		padding-left: 20px;
 		width: 260px;
 	}
+	.banners_content .banner_section .banner_info {
+		
+	}
+		.banners_content .banner_section .banner_info h5 {
+			margin: 0;
+		}
 
 /* Statistics Summary Box */
 
