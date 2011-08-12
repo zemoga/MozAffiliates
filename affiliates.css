@@ -62,13 +62,13 @@
 	    position: relative;
 	}
 		.highlight-box .header h2 {
-			left: 33px;
-			font-family: Verdana, sans-serif;
-			font-size: 28px !important;
-			font-style: normal;
-			margin: 0;
+			font-family: MetaWebPro;
+		    font-size: 30px !important;
+		    font-style: normal;
+		    left: 33px;
+		    margin: 0;
 		    position: relative;
-			top: 33px;
+		    top: 33px;
 		}
 	.highlight-box .help_bulb_wrapper {
 		position: relative;
@@ -154,7 +154,8 @@
 		.highlight-box .accordion .collapsed .answer {
 			display: none;
 		}
-.arrow_indicator {
+.arrow_indicator,
+.arrow_indicator_banner {
 	background: url(img/zemoga/bottom-arrow.png) no-repeat 0 0;
 	display: none;
 	height: 13px;
@@ -179,6 +180,17 @@
 .fourth_section .arrow_indicator {
 	display: block;
 	left: 550px;
+}
+
+.current_banner .arrow_indicator_banner {
+	display: block;
+	left: 200px;
+    top: 77px;
+}
+.new_banner .arrow_indicator_banner {
+	display: block;
+	left: 420px;
+    top: 77px;
 }
 input{
 	font-family: Georgia,serif;
@@ -734,6 +746,99 @@ div.block-space{
     width: 256px;
 }
 
+#admin_banners .header {
+	border-top: 1px solid #E1EDF9;
+	border-radius: 0;
+	clear: both;
+	margin-top: 0;
+}
+#admin_banners .banners_nav {
+	list-style: none;
+    margin: 0;
+    padding: 0 80px;
+    text-align: center;
+}
+#admin_banners .banners_nav li {
+	background: url(img/zemoga/banner_nav_bar.png) no-repeat 0 15px;
+	float: left;
+    font-family: 'MuseoSans500';
+    list-style: none;
+    margin: 0;
+    padding: 20px 35px 25px;
+    text-align: center;
+}
+#admin_banners .banners_nav li:first-child {
+	background: none;
+}
+	#admin_banners .banners_nav li a {
+		color: #444;
+	}
+	#admin_banners .banners_nav li a:hover {
+		color: #447BC4;
+	}
+
+#admin_banners.current_banner .banners_nav li.current_banner_option {
+	
+}
+	#admin_banners.current_banner .banners_nav li.current_banner_option a {
+		color: #447BC4;
+	}
+#admin_banners.new_banner .banners_nav li.new_banner_option {
+	
+}
+	#admin_banners.new_banner .banners_nav li.new_banner_option a {
+		color: #447BC4;
+	}
+	
+.banners_content #footer-content {
+	margin: 0 -20px -10px;
+}
+.banners_content .banner_section {
+	border-bottom: 1px solid #DFDFDF;
+	margin-top: 30px;
+}
+	.banners_content .banner_section ul {
+		list-style: none;
+	    margin: 0;
+		overflow: hidden;
+		padding: 0;
+	}
+	.banners_content .banner_section li {
+		list-style: none;
+	    margin: 0;
+		padding: 0;
+	}
+	.banners_content .banner_section h4 {
+		font-family: 'MetaWebPro', serif;
+		font-size: 20px;
+	    font-style: normal;
+	    margin: 0 0 10px;
+	}
+	.banners_content .banner_section .col_1,
+	.banners_content .banner_section .col_2,
+	.banners_content .banner_section .col_3 {
+		float: left;
+		border-top: 1px solid #DFDFDF;
+		padding-top: 20px;
+	}
+	.banners_content .banner_section .col_1 {
+		font-family: MetaWebPro;
+	    font-size: 30px !important;
+	    font-style: normal;
+		line-height: 1;
+		text-align: center;
+		width: 40px;
+	}
+	.banners_content .banner_section .col_2 {
+		background-color: #F6F9FD;
+		border-left: 1px solid #DFDFDF;
+		border-right: 1px solid #DFDFDF;
+		text-align: center;
+		width: 280px;
+	}
+	.banners_content .banner_section .col_3 {
+		width: 260px;
+	}
 
 /* Statistics Summary Box */
 
