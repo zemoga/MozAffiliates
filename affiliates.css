@@ -13,6 +13,19 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: 'MetaWebPro';  
+	src: url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.eot');  
+    src: local('☺'), url('fonts/MetaWebPro-Normal.woff') format('woff');
+     font-weight: normal;
+    font-style: normal;   
+}
+@font-face {
+	font-family: 'MetaWebProBlack';
+	src: url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.eot');    
+    src: local('☺'), url('fonts/MetaWebPro-Black.woff') format('woff');
+    
+}
 
 /* Styles used across all affiliates program pages */
 .highlight-box {
@@ -300,7 +313,7 @@ div.left-arrow span {
 	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#f4faff', GradientType=0);
 }
 #steps-started h3 {
-	font-family: 'MuseoSans500';
+	font-family: "MetaWebPro";
 	font-size: 30px;
 	font-style:normal;
 	color: #39393a;
@@ -321,6 +334,8 @@ div.left-arrow span {
 		color: #474848;
 		padding-top: 11px;
 		background: url(img/zemoga/sprite-steps.png) no-repeat scroll 0 0 #FFFFFF;
+		font-family: "MetaWebPro";
+		font-size: 15px;
 	}
 	#steps-started ul.steps-buttons li.first{
 		width: 150px;
@@ -351,7 +366,7 @@ div.left-arrow span {
 		background-position: 0 -148px;		
 	}
 	#steps-started ul.steps-buttons li span{		
-		font-family: 'MuseoSans500';
+		font-family: "MetaWebPro";
 		font-size: 26px;		 
 	}
 #step-content{
@@ -368,21 +383,22 @@ div.left-arrow span {
 	font-size: 20px; 
 	padding:  20px 20px 0;
 }	
-/*#step-content h3 span{
+#step-content h3 span{
 	color:#000;
 	font-size: 20px;
 	text-transform: none;
 	font-weight: lighter;
 	width: 100px;	
-}*/
+}
 #step-content p.head{
+
 	color: #39393A;
     font-family: 'MuseoSans500',serif;
-    font-size: 20px;
     font-weight: normal;
     line-height: 1.2;
     padding: 44px 33px 0;
     width: 580px;
+	font-size: 22px;
 }
 #step-content p.head span{
 	color:#ae2900;
@@ -392,6 +408,7 @@ div.left-arrow span {
 	padding: 44px 33px 0;
 	font-size: 22px;
 	color:#898989;
+	font-family: "MetaWebPro";
 }
 #step-content p.title span{
 	color:#39393a;
@@ -426,9 +443,17 @@ div.left-arrow span {
 	margin-right:10px;
 	width: 100px;
 	float: right;
+	font-family: "MetaWebProBlack";
+	font-size:20px;
+	text-transform: uppercase;
+	line-height: 0.9;
 }
 #step-content ul li div.description p span{
 	font-style: italic;
+	font-family: Georgia,serif;  
+	font-size:  13px;
+	text-transform: lowercase;
+	font-weight: bold;
 }
 #footer-content{
 	-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
@@ -542,16 +567,25 @@ p.banners_counter span {
 	padding: 10px 20px 0;
 }
 #head-box h3{
-	margin: 0;	
+	margin: 0;
+	font-size:20px;
+	font-family: "MetaWebPro";
+	font-style: normal;	
 }
 #head-box .date{
 	font-family: 'MuseoSans500';
 	font-size: 12px;
 	color: #5e5e5e;
 }
+
 #sidebar-nav {
 	list-style: none;
 	margin: 15px 0 5px;
+	overflow: hidden;
+	text-align: right;
+}
+#sidebar-nav ul{
+	margin-bottom: 5px;
 	overflow: hidden;
 }
 #sidebar-nav li {
@@ -674,4 +708,3 @@ div.block-space{
 	margin-bottom: 20px;
 	width: 270px;
 }
-
