@@ -590,6 +590,7 @@ p.banners_counter span {
 	font-family: 'MuseoSans500';
 	font-size: 12px;
 	color: #5e5e5e;
+	line-height: 1.2;
 }
 
 #sidebar-nav {
@@ -940,7 +941,15 @@ div.total-downloads-section{
 		text-align:right;
 		margin:18px 0 4px 0;
 	}
-
+	div.total-downloads-section h4 span{
+		float: left;
+		font-family:MuseoSans500,sans-serif;
+		font-size:13px;
+		text-transform:uppercase;
+		font-weight: normal;
+		font-style:normal;
+	}
+	
 	div.total-downloads-section .divider-medium{
 		margin:0;
 		height:14px;
@@ -955,7 +964,17 @@ div.total-downloads-section{
 		display:block;
 		border-top:1px solid #e1edf9;
 		padding:4px;
+		font-size: 14px;
 	}
+	div.total-downloads-section ul li span{
+		padding-right: 20px;
+	}
+	div.total-downloads-section ul li img.user-category-icon{
+		margin-right: 5px;
+		position: relative;
+		top: 3px;
+	}
+	
 	div.total-downloads-section ul li:first-child{
 		border-top:none;
 	}
@@ -969,5 +988,15 @@ div.total-downloads-section{
 		font-family:Georgia,serif;
 		font-size:16px;
 		font-style:italic;
+	}
+	div.download_tooltip{
+		top:50px;
+		font-family:Georgia,serif;
+		font-style:italic;
+		font-size:14px;		
+	}
+	div.download_tooltip span{
+		left:-30px;
+		
 	}
 
