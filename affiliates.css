@@ -387,6 +387,19 @@ div.left-arrow span {
 	color: #fff;
 	padding-bottom: 10px;
 }
+button.back{
+	
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 8px 18px;
+	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
+	border: 1px solid #E6EBF1;
+	color: #5E5E5E;
+	float: left;
+}
+
 #footer-content button {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #B3C8D7;
@@ -404,6 +417,7 @@ div.left-arrow span {
 	color: #5E5E5E;
 	float: left;
 }
+
 /*side bar*/
 #sidebar {
 	width: 280px;
