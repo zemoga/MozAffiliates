@@ -19,7 +19,7 @@
     zoom: 1;
     padding: 15px 20px 10px 20px;
     position: relative;
-    border: 1px solid #D7D9E8;
+    border: 1px solid #B0C1D2;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -118,7 +118,7 @@
 		.highlight-box .faq_content .answer {
 		    font-size: 14px;
 		    margin: 0;
-		    padding: 0 35px 20px 65px;
+		    padding: 0 30px 20px 65px;
 		}
 		.highlight-box .accordion .expanded h5 a {
 			background-image: url(img/zemoga/icn_expanded.png);
@@ -262,11 +262,11 @@ div.left-arrow span {
 	float: left;
 	width: 650px;	
 }
-#content-nav ul {
-	margin-bottom: 5px;
+#content-nav {
+	margin: 15px 0 5px;
 	overflow: hidden;
 }
-#content-nav ul li {
+#content-nav li {
 	background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #e6ebf1;
     border-radius: 4px 4px 4px 4px; 
@@ -275,12 +275,16 @@ div.left-arrow span {
     float: left;
     font-family: 'MuseoSans500';
     list-style: none; 
-    margin: 0 5px 5px 0;
+    margin: 0 0 5px 10px;
     padding: 7px 0px;
     text-align: center;
-    width: 154px;
+    width: 151px;
 }
-#content-nav ul li.active {
+#content-nav li:first-child {
+	margin-left: 0;
+}
+#content-nav li.active {
+	border-color: #B0C1D2;
 	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 	color:#4577a6;
 }
@@ -355,6 +359,7 @@ div.left-arrow span {
 }
 #step-content div.divider-notch {
 	background: url(img/zemoga/divider-notch-steps.jpg) no-repeat scroll 0 0 #FFFFFF;
+	margin-bottom: 15px;
 	padding-top: 50px;	
 }
 #step-content h3{
@@ -371,10 +376,13 @@ div.left-arrow span {
 	width: 100px;	
 }*/
 #step-content p.head{
-	width:580px;
-	padding: 44px 33px 0;
-	font-size: 22px;
-	color:#39393a;
+	color: #39393A;
+    font-family: 'MuseoSans500',serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: 44px 33px 0;
+    width: 580px;
 }
 #step-content p.head span{
 	color:#ae2900;
@@ -423,14 +431,11 @@ div.left-arrow span {
 	font-style: italic;
 }
 #footer-content{
-	background-image: -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%);
 	-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
-	background-color: #FFF;
-	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(1, rgb(244,250,255)), color-stop(0.9, rgb(255,255,255)) );
-	background-image: -moz-linear-gradient( center bottom, rgb(244,250,255) 25%, rgb(255,255,255) 57% );
-	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f4faff', EndColorStr='#FFFFFF', GradientType=0);
+	background-color: #F6F9FD;
+	border-radius: 0 0 6px 6px;
 	height: 40px;
 	padding: 20px 30px;
 	text-align: right;
@@ -450,19 +455,25 @@ div.left-arrow span {
 	border: none;
 	box-shadow: 0 1px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 	color: #fff;
-	padding-bottom: 10px;
+	font-family: Georgia;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    padding-bottom: 10px;
 }
-button.back{
-	
-	background: none repeat scroll 0 0 #FFFFFF;
-    border-radius: 4px 4px 4px 4px;
-    cursor: pointer;
-    font-size: 13px;
-    padding: 8px 18px;
-	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
-	border: 1px solid #E6EBF1;
+button.back {
+	background: #FFF;
+	border: 1px solid #B0C1D2;
+    border-radius: 4px;
 	color: #5E5E5E;
+    cursor: pointer;
+	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 	float: left;
+	font-family: Georgia;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    padding: 8px 18px;
 }
 
 #footer-content button {
@@ -478,9 +489,14 @@ button.back{
 #footer-content button.back{
 	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 	background: none repeat scroll 0 0 white;
-	border: 1px solid #E6EBF1;
+	border: 1px solid #B0C1D2;
 	color: #5E5E5E;
 	float: left;
+	font-family: Georgia;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    padding-bottom: 10px;
 }
 
 /*side bar*/
@@ -533,35 +549,28 @@ p.banners_counter span {
 	font-size: 12px;
 	color: #5e5e5e;
 }
-#sidebar-nav ul{
-	margin-bottom: 5px;
+#sidebar-nav {
+	list-style: none;
+	margin: 15px 0 5px;
 	overflow: hidden;
-	text-align: right;
 }
-#sidebar-nav ul li{
-	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
-	background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #E6EBF1;
-    border-radius: 4px 4px 4px 4px;
-    color: #5E5E5E;
-    cursor: pointer;   
+#sidebar-nav li {
 	float: right;
-    font-family: 'MuseoSans500';
-	line-height: 1.5;
-    list-style: none outside none;
-    margin: 0 5px 5px 0;
-    padding: 7px 10px;
-    text-align: center; 
-	width: auto;
+	list-style: none;
+	margin: 0 10px 0 0;
+}
+#sidebar-nav li:first-child {
+	margin: 0;
 }
 #sidebar .buttonhead{
 	background: #FFF;
 	color: #4F4F4F;	
 	cursor:pointer;
+	display: inline-block;
 	font-family: 'MuseoSans500';
 	font-size: 13px;
-	margin: 2px 5px 18px 0;
-    padding: 9px 10px;
+	margin: 0 0 5px;
+    padding: 8px 10px;
 	zoom: 1;
 	border: 1px solid #B3C8D7;
 	-webkit-border-radius:4px;
@@ -570,6 +579,12 @@ p.banners_counter span {
 	-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
 	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
 	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
+}
+#sidebar button.buttonhead{
+	padding: 8px 25px;
+}
+#sidebar .buttonhead img {
+	padding-top: 1px;
 }
 #latest-news h3 {
 	font-family: Georgia,serif;
@@ -637,7 +652,6 @@ div.block-space{
 #banner-user div.fields {
 	width: 130px;
 	float: left;
-	
 } 
 #banner-user div.code h3 {
 	font-family: 'MuseoSans500', sans-serif;
@@ -653,5 +667,11 @@ div.block-space{
 	color:#9e9e9e;
 	font-style: italic;
 	
+}
+#banner-user div.code textarea {
+	height: 100px;
+    font-family: 'MuseoSans500', sans-serif;
+	margin-bottom: 20px;
+	width: 270px;
 }
 
