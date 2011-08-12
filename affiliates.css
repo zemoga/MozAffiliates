@@ -29,8 +29,12 @@
 @font-face {
 	font-family: 'MetaWebProBook';
 	src: url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.eot');    
-    src: local('☺'), url('fonts/MetaWebPro-Book.woff') format('woff');
-    
+    src: local('☺'), url('fonts/MetaWebPro-Book.woff') format('woff');  
+}
+@font-face {
+	font-family: 'MetaWebProCondNormal';
+	src: url('http://mozcom-cdn.mozilla.net/img/fonts/MetaWebPro-Black.eot'); 
+    src: local('☺'), url('fonts/MetaWebPro-CondNormal.woff') format('woff');
 }
 /* Styles used across all affiliates program pages */
 .highlight-box {
@@ -553,7 +557,7 @@ div.degraded-box{
 }
 #user-info span {
 	color: #444;
-	font-family: Helvetica;
+	font-family: 'MetaWebProCondNormal', serif;
     font-size: 18px;
     padding: 0 10px 0 20px;
     position: relative;
