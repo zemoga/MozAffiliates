@@ -845,7 +845,17 @@ div.block-space{
 		
 	}
 		.banners_content .banner_section .banner_info h5 {
-			margin: 0;
+			font-family: 'MuseoSans500';
+		    font-size: 14px;
+		    font-style: normal;
+		    line-height: 1;
+		    margin: 0;
+			text-transform: uppercase;
+		}
+		.banners_content .banner_section .banner_info p {
+			color: #999;
+		    font-style: italic;
+    		line-height: 1.2;
 		}
 
 /* Statistics Summary Box */
