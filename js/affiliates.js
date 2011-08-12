@@ -171,6 +171,12 @@ var MonthPicker = {
 			MonthPicker.refresh();
 		});	
 
+		$('.month-year-picker').mouseleave(function(){
+			setTimeout(function(){
+				MonthPicker.close();
+			},200);
+		});
+
 	},
 	refresh:function(){
 		// set month-year
@@ -191,10 +197,12 @@ var MonthPicker = {
 	open:function(){
 		MonthPicker.monthList.show();
 		MonthPicker.opened = true;
+		$('.current-month-year').css('background-color','#e8f2ff');
 	},
 	close:function(){
 		MonthPicker.monthList.hide();
 		MonthPicker.opened = false;
+		$('.current-month-year').css('background-color','#FFF');
 	},
 	nextMonth:function(){
 		if (MonthPicker.currentMonth < 12){

@@ -251,6 +251,12 @@ div.left-arrow span {
     width: 26px;
     z-index: 1;
 }
+
+.clearfix{
+	clear:both;
+	height:0;
+}
+
 /*steps for affiliates*/
 #content{
 	float: left;
