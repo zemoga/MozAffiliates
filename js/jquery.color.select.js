@@ -50,6 +50,11 @@
 						 });
 					});
   				});
+/*
+				$("option", $(this)).each(function(){
+					console.log(this);
+				});    			
+*/
     		});
     	}
  });
