@@ -108,20 +108,29 @@
     		padding: 0;
 		}
 		.highlight-box .faq_content h5 a {
-			background: url(img/zemoga/icn_collapsed.png) no-repeat 22px 22px;
+			background-position: 22px 22px;
+			background-repeat: no-repeat;
 		    padding: 20px 30px 20px 65px;
-		}
-		.highlight-box .faq_content .expanded h5 a {
-			background-image: url(img/zemoga/icn_expanded.png);
 		}
 		.highlight-box .faq_content h5 a:hover {
 		    color: #447BC4;
 		}
 		.highlight-box .faq_content .answer {
-			display: none;
 		    font-size: 14px;
 		    margin: 0;
 		    padding: 0 35px 20px 65px;
+		}
+		.highlight-box .accordion .expanded h5 a {
+			background-image: url(img/zemoga/icn_expanded.png);
+		}
+		.highlight-box .accordion .collapsed h5 a {
+			background-image: url(img/zemoga/icn_collapsed.png);
+		}
+		.highlight-box .accordion .expanded .answer {
+			display: block;
+		}
+		.highlight-box .accordion .collapsed .answer {
+			display: none;
 		}
 .arrow_indicator {
 	background: url(img/zemoga/bottom-arrow.png) no-repeat 0 0;

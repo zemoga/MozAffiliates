@@ -1,4 +1,3 @@
-
 /**
  * Page Initialization
  */
@@ -30,6 +29,11 @@ var HomePage = {
 				e.preventDefault();
 			})
 		}
+		if ($(".js_accordion").length) {
+			$(".js_accordion").each(function(index, elem){
+				HomePage.initAccordion(elem);
+			});
+		}
 		if ($(".show_tooltip").length) {
 			$(".show_tooltip").click(function(e){
 				e.preventDefault();
@@ -58,6 +62,29 @@ var HomePage = {
 		} else {
 			toolTip.hide();
 		}
+	},
+	initAccordion : function(elem){
+		var ulAccordion = $(elem),
+			lnkAction = $("h5 a", ulAccordion),
+			liElement, answerElement;
+		
+		ulAccordion.children().removeClass().addClass('collapsed');
+		lnkAction.each(function(){
+			$(this).click(function(e){
+				e.preventDefault();
+				liElement = $(this).parents('li');
+				answerElement = $('.answer', liElement);
+				if (liElement.hasClass('collapsed')) {
+					answerElement.slideDown('fast', function() {
+						liElement.removeClass().addClass('expanded');
+					});
+				} else {
+					answerElement.slideUp('fast', function() {
+						liElement.removeClass().addClass('collapsed');
+					});
+				}
+			});
+		});
 	}
 }
 
