@@ -396,14 +396,13 @@ div.left-arrow span {
 	width: 100px;	
 }
 #step-content p.head{
-
 	color: #39393A;
-    font-family: 'MuseoSans500',serif;
+    font-family: 'MetaWebPro',serif;
+    font-size: 20px;
     font-weight: normal;
     line-height: 1.2;
     padding: 44px 33px 0;
     width: 580px;
-	font-size: 22px;
 }
 #step-content p.head span{
 	color:#ae2900;
@@ -424,28 +423,33 @@ div.left-arrow span {
 	padding: 10px 0 30px 30px;
 }
 #step-content ul li{
-	background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #e6ebf1;
-    border-radius: 4px 4px 4px 4px;    
+	background: #FFF;
+    border: 1px solid #E6EBF1;
+    border-radius: 8px;
     cursor: pointer;
-	width: 188px;
-	height: 214px;
-	float: left;
-	margin-right:10px;
-	list-style: none;
-	font-family: "MetaBlack";
-	font-size: 20px; 
+    float: left;
+    font-family: "MetaBlack";
+    font-size: 20px;
+    height: 190px;
+    list-style: none outside none;
+    margin-right: 10px;
+    padding: 24px 20px 0;
+    width: 148px;
 }
-
+#step-content ul li.selected {
+	color: #4577A6;
+	border: 1px solid #B0C1D2;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
+}
 #step-content ul li img{
-	padding: 24px 20px 0; 
+	padding: 0; 
 }
 #step-content ul li div.description{
-	padding: 0 20px;
+	padding: 0;
 	width: 140px;
 }
 #step-content ul li div.description p{
-	margin-right:10px;
+	margin: 0;
 	width: 100px;
 	float: right;
 	font-family: "MetaWebProBlack";
