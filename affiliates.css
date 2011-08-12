@@ -316,7 +316,7 @@ div.left-arrow span {
 	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	background-color: #FFF;
 	background: url(img/zemoga/bg_highlightbox_header.png) repeat-x 0 0;
-	border-radius: 6px 6px 0 0;
+	border-radius: 6px;
 	padding: 0;
 	width: 642px;
 }
