@@ -422,7 +422,22 @@ div.selector span {
   text-shadow: 0 1px 0 #fff;
   width: 252px;
 }
+div.short div.selector.focus:active,
+div.short div.selector.focus.active,
+div.short div.selector:hover:active,
+div.short div.selector.active:hover {
+  background-position: -386px -2px;
+}
 
+div.short div.selector.focus:active span,
+div.short div.selector:hover:active span,
+div.short div.selector.active:hover span,
+div.short div.selector.focus.active span {
+  background-position: -386px -2px;
+}
+div.short div.selector span{
+	background-position: -386px -2px;
+} 
 div.selector.disabled span {
   color: #bbb;
 }
