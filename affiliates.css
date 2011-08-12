@@ -302,27 +302,27 @@ div.left-arrow span {
 	color:#4577a6;
 }
 #steps-started {
-	width: 642px;
-	padding: 0;
-	background-image: url(img/zemoga/vertical-lines.png), -moz-linear-gradient(center top , #F4FAFF 25%, #FFFFFF 57%);
 	-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	background-color: #FFF;
-	background-image: url(img/zemoga/vertical-lines.png), -webkit-gradient( linear, left bottom, left top, color-stop(1, rgb(244,250,255)), color-stop(0.9, rgb(255,255,255)));
-	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FFFFFF', EndColorStr='#f4faff', GradientType=0);
+	background: url(img/zemoga/bg_highlightbox_header.png) repeat-x 0 0;
+	border-radius: 6px 6px 0 0;
+	padding: 0;
+	width: 642px;
 }
 #steps-started h3 {
 	font-family: "MetaWebPro";
 	font-size: 30px;
-	font-style:normal;
+	font-style: normal;
 	color: #39393a;
-	padding: 20px;
+	margin: 0;
+    padding: 33px 33px 28px;
 }
 #steps-started ul.steps-buttons{
 	background: none repeat scroll 0 0 #d3dfe7;
 	/*border: 1px solid #b4c8d6;*/
-	margin-bottom: 0;
+	margin: 0;
 	overflow: hidden;
 }
 	#steps-started ul.steps-buttons li{
@@ -614,11 +614,9 @@ p.banners_counter span {
 	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
 	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(224,239,249,0.9) inset;
 }
-#sidebar button.buttonhead{
-	padding: 8px 25px;
-}
-#sidebar .buttonhead img {
-	padding-top: 1px;
+#sidebar button.buttonhead {
+	height: 36px;
+    padding: 0 25px;
 }
 #latest-news h3 {
 	font-family: Georgia,serif;
@@ -675,6 +673,15 @@ div.block-space{
 	border-bottom: dashed 1px #B5C5D5; 
 	padding: 10px;
 }
+#banner-user div.options .selector {
+	width: 105px;
+}
+#banner-user div.options .selector span {
+	width: 78px;
+}
+#banner-user div.options .selector select {
+	min-width: 115px;
+}
 
 #banner-user div.fields h4 {
 	font-family: 'MuseoSans500', sans-serif;
@@ -703,8 +710,11 @@ div.block-space{
 	
 }
 #banner-user div.code textarea {
-	height: 100px;
-    font-family: 'MuseoSans500', sans-serif;
-	margin-bottom: 20px;
-	width: 270px;
+	font-family: 'MuseoSans500', sans;
+    font-size: 14px;
+    height: 86px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding: 7px;
+    width: 256px;
 }
