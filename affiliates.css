@@ -388,7 +388,8 @@ div.left-arrow span {
 	}
 	#steps-started ul.steps-buttons li span{		
 		font-family: "MetaWebPro";
-		font-size: 26px;		 
+		font-size: 26px;
+		margin-right: 7px;		 
 	}
 #step-content{
 	background:#FFF;	
@@ -414,7 +415,7 @@ div.left-arrow span {
 #step-content p.head{
 	color: #39393A;
     font-family: 'MetaWebPro',serif;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: normal;
     line-height: 1.2;
     padding: 44px 33px 0;
