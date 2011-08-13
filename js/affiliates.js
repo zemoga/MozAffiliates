@@ -3,7 +3,7 @@
  */
 $(
 	function(event){
-		MonthPicker.init();
+		void MonthPicker.init();
 		void HomePage.init();
 	}
 );
@@ -87,11 +87,6 @@ var HomePage = {
 		});
 	}
 }
-
-
-
-
-
 /**
  * Month Picker Class
  */
@@ -100,12 +95,14 @@ var MonthPicker = {
 	currentMonth:01,
 	currentYear:2011,
 	monthNames:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+	fullMonthNames:['January','February','March','April','May','June','July','August','September','October','November','December'],
 	opened:false,
 	monthList:null,
 	/**
 	 * Month Picker Initialization
 	 */
 	init: function(){
+		void MonthPicker.refresh();
 		void MonthPicker.addEventListeners();
 	},
 	
@@ -180,7 +177,7 @@ var MonthPicker = {
 	},
 	refresh:function(){
 		// set month-year
-		$('.month-year-picker .month-year').html(MonthPicker.monthNames[MonthPicker.currentMonth - 1] + ' ' + MonthPicker.currentYear);	
+		$('.month-year-picker .month-year').html(MonthPicker.fullMonthNames[MonthPicker.currentMonth - 1] + ' ' + MonthPicker.currentYear);	
 
 		// set year
 		$('.month-picker .current-year').html(MonthPicker.currentYear);
