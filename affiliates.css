@@ -322,7 +322,7 @@ div.left-arrow span {
 	box-shadow: 0 2px rgba(0, 0, 0, 0.05), 0 -2px rgba(224, 239, 249, 0.9) inset;
 	color:#4577a6;
 }
-#steps-started {
+.steps-started-wrap{
 	-webkit-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	-moz-box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
 	box-shadow:0 2px rgba(0,0,0,0.05), 0 -2px rgba(0,0,0,0.05) inset;
@@ -746,6 +746,13 @@ div.block-space{
     padding: 7px;
     width: 256px;
 }
+#admin_banners #steps-started{
+	margin: 0 -20px;
+}
+
+#admin_banners #steps-started ul.steps-buttons li.third{
+	width: 196px;
+}
 
 #admin_banners .header {
 	border-top: 1px solid #E1EDF9;
@@ -792,7 +799,7 @@ div.block-space{
 	}
 	
 .banners_content #footer-content {
-	margin: 0 -20px -10px;
+	margin: 0 0 -10px;
 }
 .banners_content .banner_section {
 	border-bottom: 1px solid #DFDFDF;
