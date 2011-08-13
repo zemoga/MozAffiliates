@@ -389,7 +389,9 @@ div.left-arrow span {
 	#steps-started ul.steps-buttons li span{		
 		font-family: "MetaWebPro";
 		font-size: 26px;
-		margin-right: 7px;		 
+		margin-right: 7px;
+		position: relative;
+		top:2px;		 
 	}
 #step-content{
 	background:#FFF;	
@@ -439,7 +441,7 @@ div.left-arrow span {
 	overflow: hidden;
 	padding: 10px 0 30px 30px;
 }
-#step-content ul li{
+#step-content ul li.options{
 	background: #FFF;
     border: 1px solid #E6EBF1;
     border-radius: 8px;
